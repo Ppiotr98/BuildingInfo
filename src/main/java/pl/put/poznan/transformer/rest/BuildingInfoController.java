@@ -31,16 +31,23 @@ public class BuildingInfoController {
             return jo.toString();
         }
         JSONObject jo = new JSONObject(payload);
+        // show input body in logs (debug only)
         logger.debug(jo.toString());
-        Budynek budynek = new Budynek("1");
+        // create new budynek. because we have only one budynek, we don't need to give them id
+        Budynek budynek = new Budynek();
+        // get levels array from json
         JSONArray poziomy = jo.getJSONArray("poziomy");
+        // for each level in the building
         for (int i=0; i<poziomy.length(); i++){
+            // get level info and create level
             JSONObject poz_tmp_jo = poziomy.getJSONObject(i);
             String  id_poz = poz_tmp_jo.getString("id");
             String name_poz = poz_tmp_jo.getString("name");
             Poziom poz_tmp = new Poziom(id_poz, name_poz);
             JSONArray pomieszczenia = poz_tmp_jo.getJSONArray("pomieszczenia");
+            // for each room on the level
             for (int j=0; j<pomieszczenia.length(); j++){
+                // get info about room and create object
                 JSONObject pom_tmp_jo = pomieszczenia.getJSONObject(j);
                 String id_pom = pom_tmp_jo.getString("id");
                 String name_pom = pom_tmp_jo.getString("name");
@@ -49,10 +56,13 @@ public class BuildingInfoController {
                 float heating = pom_tmp_jo.getFloat("heating");
                 int light = pom_tmp_jo.getInt("light");
                 Pomieszczenie pom_tmp = new Pomieszczenie(id_pom, name_pom, area, cube, heating, light);
+                // add object into level's set
                 poz_tmp.addPomieszczenia(pom_tmp);
             }
+            // add level into building's set
             budynek.addPoziom(poz_tmp);
         }
+        // return result according to the request
         return budynek.zwrocWynik(action, pom, poz, bud).toString();
     }
 

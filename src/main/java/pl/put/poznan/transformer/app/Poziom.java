@@ -14,7 +14,7 @@ public class Poziom extends Lokalizacja {
     public Poziom(String id, String name) {
         super(id, name);
     }
-
+    // because we add rooms in addPomieszczenia() method we don't really need this function. To remove?     @daniktl
     public void setPomieszczenia(Set<Pomieszczenie> pomieszczenia) {
         this.pomieszczenia = pomieszczenia;
         /* TODO */

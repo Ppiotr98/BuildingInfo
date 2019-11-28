@@ -1,8 +1,5 @@
 package pl.put.poznan.transformer.app;
-
 import org.json.JSONObject;
-
-import java.lang.reflect.Array;
 
 public abstract class Lokalizacja {
     private String id;
@@ -36,6 +33,7 @@ public abstract class Lokalizacja {
             float res = getFullArea();
             jo.put("Full area", res);
         }
+        // TODO: other methods
         return jo;
     }
 }
