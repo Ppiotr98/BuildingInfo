@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="add 4 basic classes">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Budynek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Lokalizacja.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Pomieszczenie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Poziom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ioprojectarchitecture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ioprojectarchitecture.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Budynek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Budynek.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
   </component>
   <component name="RecentsManager">
@@ -66,8 +62,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextTransformerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.app.TextTransformerApplication" />
+    <configuration name="BuildingInfoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.app.BuildingInfoApplication" />
       <module name="ioprojectarchitecture" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -113,7 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TextTransformerApplication" />
+        <item itemvalue="Application.BuildingInfoApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -130,6 +126,8 @@
       <workItem from="1513022386137" duration="6468000" />
       <workItem from="1513093084300" duration="8069000" />
       <workItem from="1572900693808" duration="663000" />
+      <workItem from="1574681000515" duration="571000" />
+      <workItem from="1574934665221" duration="871000" />
     </task>
     <servers />
   </component>
@@ -141,7 +139,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

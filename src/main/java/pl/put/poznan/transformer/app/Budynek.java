@@ -3,6 +3,7 @@ package pl.put.poznan.transformer.app;
 import java.util.HashSet;
 import java.util.Set;
 
+
 public class Budynek extends Lokalizacja {
     private Set<Poziom> poziomy = new HashSet<>();
 
