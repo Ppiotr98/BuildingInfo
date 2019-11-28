@@ -1,0 +1,1034 @@
+{
+  "poziomy": [
+    {
+      "id": "p1",
+      "name": "poziom 1",
+      "pomieszczenia": [
+        {
+          "id": "pom1",
+          "name": "pomieszczenie 1",
+          "area": 37,
+          "cube": 111,
+          "heating": 27,
+          "light": 29
+        },
+        {
+          "id": "pom2",
+          "name": "pomieszczenie 2",
+          "area": 101,
+          "cube": 303,
+          "heating": 34,
+          "light": 29
+        },
+        {
+          "id": "pom3",
+          "name": "pomieszczenie 3",
+          "area": 140,
+          "cube": 420,
+          "heating": 13,
+          "light": 20
+        },
+        {
+          "id": "pom4",
+          "name": "pomieszczenie 4",
+          "area": 116,
+          "cube": 348,
+          "heating": 21,
+          "light": 18
+        },
+        {
+          "id": "pom5",
+          "name": "pomieszczenie 5",
+          "area": 67,
+          "cube": 201,
+          "heating": 13,
+          "light": 30
+        },
+        {
+          "id": "pom7",
+          "name": "pomieszczenie 7",
+          "area": 76,
+          "cube": 228,
+          "heating": 25,
+          "light": 39
+        },
+        {
+          "id": "pom8",
+          "name": "pomieszczenie 8",
+          "area": 58,
+          "cube": 174,
+          "heating": 26,
+          "light": 26
+        },
+        {
+          "id": "pom9",
+          "name": "pomieszczenie 9",
+          "area": 146,
+          "cube": 438,
+          "heating": 12,
+          "light": 14
+        },
+        {
+          "id": "pom10",
+          "name": "pomieszczenie 10",
+          "area": 121,
+          "cube": 363,
+          "heating": 39,
+          "light": 11
+        },
+        {
+          "id": "pom11",
+          "name": "pomieszczenie 11",
+          "area": 103,
+          "cube": 309,
+          "heating": 24,
+          "light": 21
+        },
+        {
+          "id": "pom13",
+          "name": "pomieszczenie 13",
+          "area": 47,
+          "cube": 141,
+          "heating": 39,
+          "light": 35
+        },
+        {
+          "id": "pom14",
+          "name": "pomieszczenie 14",
+          "area": 122,
+          "cube": 366,
+          "heating": 35,
+          "light": 16
+        },
+        {
+          "id": "pom15",
+          "name": "pomieszczenie 15",
+          "area": 55,
+          "cube": 165,
+          "heating": 10,
+          "light": 27
+        },
+        {
+          "id": "pom16",
+          "name": "pomieszczenie 16",
+          "area": 120,
+          "cube": 360,
+          "heating": 35,
+          "light": 38
+        },
+        {
+          "id": "pom17",
+          "name": "pomieszczenie 17",
+          "area": 85,
+          "cube": 255,
+          "heating": 20,
+          "light": 32
+        },
+        {
+          "id": "pom19",
+          "name": "pomieszczenie 19",
+          "area": 111,
+          "cube": 333,
+          "heating": 23,
+          "light": 24
+        },
+        {
+          "id": "pom20",
+          "name": "pomieszczenie 20",
+          "area": 130,
+          "cube": 390,
+          "heating": 15,
+          "light": 34
+        },
+        {
+          "id": "pom21",
+          "name": "pomieszczenie 21",
+          "area": 89,
+          "cube": 267,
+          "heating": 38,
+          "light": 11
+        },
+        {
+          "id": "pom22",
+          "name": "pomieszczenie 22",
+          "area": 66,
+          "cube": 198,
+          "heating": 13,
+          "light": 33
+        },
+        {
+          "id": "pom23",
+          "name": "pomieszczenie 23",
+          "area": 71,
+          "cube": 213,
+          "heating": 17,
+          "light": 14
+        },
+        {
+          "id": "pom25",
+          "name": "pomieszczenie 25",
+          "area": 95,
+          "cube": 285,
+          "heating": 27,
+          "light": 36
+        },
+        {
+          "id": "pom26",
+          "name": "pomieszczenie 26",
+          "area": 146,
+          "cube": 438,
+          "heating": 19,
+          "light": 30
+        },
+        {
+          "id": "pom27",
+          "name": "pomieszczenie 27",
+          "area": 94,
+          "cube": 282,
+          "heating": 16,
+          "light": 29
+        },
+        {
+          "id": "pom28",
+          "name": "pomieszczenie 28",
+          "area": 128,
+          "cube": 384,
+          "heating": 15,
+          "light": 32
+        },
+        {
+          "id": "pom29",
+          "name": "pomieszczenie 29",
+          "area": 46,
+          "cube": 138,
+          "heating": 33,
+          "light": 34
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "name": "poziom 2",
+      "pomieszczenia": [
+        {
+          "id": "pom1",
+          "name": "pomieszczenie 1",
+          "area": 37,
+          "cube": 111,
+          "heating": 27,
+          "light": 29
+        },
+        {
+          "id": "pom2",
+          "name": "pomieszczenie 2",
+          "area": 101,
+          "cube": 303,
+          "heating": 34,
+          "light": 29
+        },
+        {
+          "id": "pom3",
+          "name": "pomieszczenie 3",
+          "area": 140,
+          "cube": 420,
+          "heating": 13,
+          "light": 20
+        },
+        {
+          "id": "pom4",
+          "name": "pomieszczenie 4",
+          "area": 116,
+          "cube": 348,
+          "heating": 21,
+          "light": 18
+        },
+        {
+          "id": "pom5",
+          "name": "pomieszczenie 5",
+          "area": 67,
+          "cube": 201,
+          "heating": 13,
+          "light": 30
+        },
+        {
+          "id": "pom7",
+          "name": "pomieszczenie 7",
+          "area": 76,
+          "cube": 228,
+          "heating": 25,
+          "light": 39
+        },
+        {
+          "id": "pom8",
+          "name": "pomieszczenie 8",
+          "area": 58,
+          "cube": 174,
+          "heating": 26,
+          "light": 26
+        },
+        {
+          "id": "pom9",
+          "name": "pomieszczenie 9",
+          "area": 146,
+          "cube": 438,
+          "heating": 12,
+          "light": 14
+        },
+        {
+          "id": "pom10",
+          "name": "pomieszczenie 10",
+          "area": 121,
+          "cube": 363,
+          "heating": 39,
+          "light": 11
+        },
+        {
+          "id": "pom11",
+          "name": "pomieszczenie 11",
+          "area": 103,
+          "cube": 309,
+          "heating": 24,
+          "light": 21
+        },
+        {
+          "id": "pom13",
+          "name": "pomieszczenie 13",
+          "area": 47,
+          "cube": 141,
+          "heating": 39,
+          "light": 35
+        },
+        {
+          "id": "pom14",
+          "name": "pomieszczenie 14",
+          "area": 122,
+          "cube": 366,
+          "heating": 35,
+          "light": 16
+        },
+        {
+          "id": "pom15",
+          "name": "pomieszczenie 15",
+          "area": 55,
+          "cube": 165,
+          "heating": 10,
+          "light": 27
+        },
+        {
+          "id": "pom16",
+          "name": "pomieszczenie 16",
+          "area": 120,
+          "cube": 360,
+          "heating": 35,
+          "light": 38
+        },
+        {
+          "id": "pom17",
+          "name": "pomieszczenie 17",
+          "area": 85,
+          "cube": 255,
+          "heating": 20,
+          "light": 32
+        },
+        {
+          "id": "pom19",
+          "name": "pomieszczenie 19",
+          "area": 111,
+          "cube": 333,
+          "heating": 23,
+          "light": 24
+        },
+        {
+          "id": "pom20",
+          "name": "pomieszczenie 20",
+          "area": 130,
+          "cube": 390,
+          "heating": 15,
+          "light": 34
+        },
+        {
+          "id": "pom21",
+          "name": "pomieszczenie 21",
+          "area": 89,
+          "cube": 267,
+          "heating": 38,
+          "light": 11
+        },
+        {
+          "id": "pom22",
+          "name": "pomieszczenie 22",
+          "area": 66,
+          "cube": 198,
+          "heating": 13,
+          "light": 33
+        },
+        {
+          "id": "pom23",
+          "name": "pomieszczenie 23",
+          "area": 71,
+          "cube": 213,
+          "heating": 17,
+          "light": 14
+        },
+        {
+          "id": "pom25",
+          "name": "pomieszczenie 25",
+          "area": 95,
+          "cube": 285,
+          "heating": 27,
+          "light": 36
+        },
+        {
+          "id": "pom26",
+          "name": "pomieszczenie 26",
+          "area": 146,
+          "cube": 438,
+          "heating": 19,
+          "light": 30
+        },
+        {
+          "id": "pom27",
+          "name": "pomieszczenie 27",
+          "area": 94,
+          "cube": 282,
+          "heating": 16,
+          "light": 29
+        },
+        {
+          "id": "pom28",
+          "name": "pomieszczenie 28",
+          "area": 128,
+          "cube": 384,
+          "heating": 15,
+          "light": 32
+        },
+        {
+          "id": "pom29",
+          "name": "pomieszczenie 29",
+          "area": 46,
+          "cube": 138,
+          "heating": 33,
+          "light": 34
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "name": "poziom 3",
+      "pomieszczenia": [
+        {
+          "id": "pom1",
+          "name": "pomieszczenie 1",
+          "area": 37,
+          "cube": 111,
+          "heating": 27,
+          "light": 29
+        },
+        {
+          "id": "pom2",
+          "name": "pomieszczenie 2",
+          "area": 101,
+          "cube": 303,
+          "heating": 34,
+          "light": 29
+        },
+        {
+          "id": "pom3",
+          "name": "pomieszczenie 3",
+          "area": 140,
+          "cube": 420,
+          "heating": 13,
+          "light": 20
+        },
+        {
+          "id": "pom4",
+          "name": "pomieszczenie 4",
+          "area": 116,
+          "cube": 348,
+          "heating": 21,
+          "light": 18
+        },
+        {
+          "id": "pom5",
+          "name": "pomieszczenie 5",
+          "area": 67,
+          "cube": 201,
+          "heating": 13,
+          "light": 30
+        },
+        {
+          "id": "pom7",
+          "name": "pomieszczenie 7",
+          "area": 76,
+          "cube": 228,
+          "heating": 25,
+          "light": 39
+        },
+        {
+          "id": "pom8",
+          "name": "pomieszczenie 8",
+          "area": 58,
+          "cube": 174,
+          "heating": 26,
+          "light": 26
+        },
+        {
+          "id": "pom9",
+          "name": "pomieszczenie 9",
+          "area": 146,
+          "cube": 438,
+          "heating": 12,
+          "light": 14
+        },
+        {
+          "id": "pom10",
+          "name": "pomieszczenie 10",
+          "area": 121,
+          "cube": 363,
+          "heating": 39,
+          "light": 11
+        },
+        {
+          "id": "pom11",
+          "name": "pomieszczenie 11",
+          "area": 103,
+          "cube": 309,
+          "heating": 24,
+          "light": 21
+        },
+        {
+          "id": "pom13",
+          "name": "pomieszczenie 13",
+          "area": 47,
+          "cube": 141,
+          "heating": 39,
+          "light": 35
+        },
+        {
+          "id": "pom14",
+          "name": "pomieszczenie 14",
+          "area": 122,
+          "cube": 366,
+          "heating": 35,
+          "light": 16
+        },
+        {
+          "id": "pom15",
+          "name": "pomieszczenie 15",
+          "area": 55,
+          "cube": 165,
+          "heating": 10,
+          "light": 27
+        },
+        {
+          "id": "pom16",
+          "name": "pomieszczenie 16",
+          "area": 120,
+          "cube": 360,
+          "heating": 35,
+          "light": 38
+        },
+        {
+          "id": "pom17",
+          "name": "pomieszczenie 17",
+          "area": 85,
+          "cube": 255,
+          "heating": 20,
+          "light": 32
+        },
+        {
+          "id": "pom19",
+          "name": "pomieszczenie 19",
+          "area": 111,
+          "cube": 333,
+          "heating": 23,
+          "light": 24
+        },
+        {
+          "id": "pom20",
+          "name": "pomieszczenie 20",
+          "area": 130,
+          "cube": 390,
+          "heating": 15,
+          "light": 34
+        },
+        {
+          "id": "pom21",
+          "name": "pomieszczenie 21",
+          "area": 89,
+          "cube": 267,
+          "heating": 38,
+          "light": 11
+        },
+        {
+          "id": "pom22",
+          "name": "pomieszczenie 22",
+          "area": 66,
+          "cube": 198,
+          "heating": 13,
+          "light": 33
+        },
+        {
+          "id": "pom23",
+          "name": "pomieszczenie 23",
+          "area": 71,
+          "cube": 213,
+          "heating": 17,
+          "light": 14
+        },
+        {
+          "id": "pom25",
+          "name": "pomieszczenie 25",
+          "area": 95,
+          "cube": 285,
+          "heating": 27,
+          "light": 36
+        },
+        {
+          "id": "pom26",
+          "name": "pomieszczenie 26",
+          "area": 146,
+          "cube": 438,
+          "heating": 19,
+          "light": 30
+        },
+        {
+          "id": "pom27",
+          "name": "pomieszczenie 27",
+          "area": 94,
+          "cube": 282,
+          "heating": 16,
+          "light": 29
+        },
+        {
+          "id": "pom28",
+          "name": "pomieszczenie 28",
+          "area": 128,
+          "cube": 384,
+          "heating": 15,
+          "light": 32
+        },
+        {
+          "id": "pom29",
+          "name": "pomieszczenie 29",
+          "area": 46,
+          "cube": 138,
+          "heating": 33,
+          "light": 34
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "name": "poziom 4",
+      "pomieszczenia": [
+        {
+          "id": "pom1",
+          "name": "pomieszczenie 1",
+          "area": 37,
+          "cube": 111,
+          "heating": 27,
+          "light": 29
+        },
+        {
+          "id": "pom2",
+          "name": "pomieszczenie 2",
+          "area": 101,
+          "cube": 303,
+          "heating": 34,
+          "light": 29
+        },
+        {
+          "id": "pom3",
+          "name": "pomieszczenie 3",
+          "area": 140,
+          "cube": 420,
+          "heating": 13,
+          "light": 20
+        },
+        {
+          "id": "pom4",
+          "name": "pomieszczenie 4",
+          "area": 116,
+          "cube": 348,
+          "heating": 21,
+          "light": 18
+        },
+        {
+          "id": "pom5",
+          "name": "pomieszczenie 5",
+          "area": 67,
+          "cube": 201,
+          "heating": 13,
+          "light": 30
+        },
+        {
+          "id": "pom7",
+          "name": "pomieszczenie 7",
+          "area": 76,
+          "cube": 228,
+          "heating": 25,
+          "light": 39
+        },
+        {
+          "id": "pom8",
+          "name": "pomieszczenie 8",
+          "area": 58,
+          "cube": 174,
+          "heating": 26,
+          "light": 26
+        },
+        {
+          "id": "pom9",
+          "name": "pomieszczenie 9",
+          "area": 146,
+          "cube": 438,
+          "heating": 12,
+          "light": 14
+        },
+        {
+          "id": "pom10",
+          "name": "pomieszczenie 10",
+          "area": 121,
+          "cube": 363,
+          "heating": 39,
+          "light": 11
+        },
+        {
+          "id": "pom11",
+          "name": "pomieszczenie 11",
+          "area": 103,
+          "cube": 309,
+          "heating": 24,
+          "light": 21
+        },
+        {
+          "id": "pom13",
+          "name": "pomieszczenie 13",
+          "area": 47,
+          "cube": 141,
+          "heating": 39,
+          "light": 35
+        },
+        {
+          "id": "pom14",
+          "name": "pomieszczenie 14",
+          "area": 122,
+          "cube": 366,
+          "heating": 35,
+          "light": 16
+        },
+        {
+          "id": "pom15",
+          "name": "pomieszczenie 15",
+          "area": 55,
+          "cube": 165,
+          "heating": 10,
+          "light": 27
+        },
+        {
+          "id": "pom16",
+          "name": "pomieszczenie 16",
+          "area": 120,
+          "cube": 360,
+          "heating": 35,
+          "light": 38
+        },
+        {
+          "id": "pom17",
+          "name": "pomieszczenie 17",
+          "area": 85,
+          "cube": 255,
+          "heating": 20,
+          "light": 32
+        },
+        {
+          "id": "pom19",
+          "name": "pomieszczenie 19",
+          "area": 111,
+          "cube": 333,
+          "heating": 23,
+          "light": 24
+        },
+        {
+          "id": "pom20",
+          "name": "pomieszczenie 20",
+          "area": 130,
+          "cube": 390,
+          "heating": 15,
+          "light": 34
+        },
+        {
+          "id": "pom21",
+          "name": "pomieszczenie 21",
+          "area": 89,
+          "cube": 267,
+          "heating": 38,
+          "light": 11
+        },
+        {
+          "id": "pom22",
+          "name": "pomieszczenie 22",
+          "area": 66,
+          "cube": 198,
+          "heating": 13,
+          "light": 33
+        },
+        {
+          "id": "pom23",
+          "name": "pomieszczenie 23",
+          "area": 71,
+          "cube": 213,
+          "heating": 17,
+          "light": 14
+        },
+        {
+          "id": "pom25",
+          "name": "pomieszczenie 25",
+          "area": 95,
+          "cube": 285,
+          "heating": 27,
+          "light": 36
+        },
+        {
+          "id": "pom26",
+          "name": "pomieszczenie 26",
+          "area": 146,
+          "cube": 438,
+          "heating": 19,
+          "light": 30
+        },
+        {
+          "id": "pom27",
+          "name": "pomieszczenie 27",
+          "area": 94,
+          "cube": 282,
+          "heating": 16,
+          "light": 29
+        },
+        {
+          "id": "pom28",
+          "name": "pomieszczenie 28",
+          "area": 128,
+          "cube": 384,
+          "heating": 15,
+          "light": 32
+        },
+        {
+          "id": "pom29",
+          "name": "pomieszczenie 29",
+          "area": 46,
+          "cube": 138,
+          "heating": 33,
+          "light": 34
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "name": "poziom 5",
+      "pomieszczenia": [
+        {
+          "id": "pom1",
+          "name": "pomieszczenie 1",
+          "area": 37,
+          "cube": 111,
+          "heating": 27,
+          "light": 29
+        },
+        {
+          "id": "pom2",
+          "name": "pomieszczenie 2",
+          "area": 101,
+          "cube": 303,
+          "heating": 34,
+          "light": 29
+        },
+        {
+          "id": "pom3",
+          "name": "pomieszczenie 3",
+          "area": 140,
+          "cube": 420,
+          "heating": 13,
+          "light": 20
+        },
+        {
+          "id": "pom4",
+          "name": "pomieszczenie 4",
+          "area": 116,
+          "cube": 348,
+          "heating": 21,
+          "light": 18
+        },
+        {
+          "id": "pom5",
+          "name": "pomieszczenie 5",
+          "area": 67,
+          "cube": 201,
+          "heating": 13,
+          "light": 30
+        },
+        {
+          "id": "pom7",
+          "name": "pomieszczenie 7",
+          "area": 76,
+          "cube": 228,
+          "heating": 25,
+          "light": 39
+        },
+        {
+          "id": "pom8",
+          "name": "pomieszczenie 8",
+          "area": 58,
+          "cube": 174,
+          "heating": 26,
+          "light": 26
+        },
+        {
+          "id": "pom9",
+          "name": "pomieszczenie 9",
+          "area": 146,
+          "cube": 438,
+          "heating": 12,
+          "light": 14
+        },
+        {
+          "id": "pom10",
+          "name": "pomieszczenie 10",
+          "area": 121,
+          "cube": 363,
+          "heating": 39,
+          "light": 11
+        },
+        {
+          "id": "pom11",
+          "name": "pomieszczenie 11",
+          "area": 103,
+          "cube": 309,
+          "heating": 24,
+          "light": 21
+        },
+        {
+          "id": "pom13",
+          "name": "pomieszczenie 13",
+          "area": 47,
+          "cube": 141,
+          "heating": 39,
+          "light": 35
+        },
+        {
+          "id": "pom14",
+          "name": "pomieszczenie 14",
+          "area": 122,
+          "cube": 366,
+          "heating": 35,
+          "light": 16
+        },
+        {
+          "id": "pom15",
+          "name": "pomieszczenie 15",
+          "area": 55,
+          "cube": 165,
+          "heating": 10,
+          "light": 27
+        },
+        {
+          "id": "pom16",
+          "name": "pomieszczenie 16",
+          "area": 120,
+          "cube": 360,
+          "heating": 35,
+          "light": 38
+        },
+        {
+          "id": "pom17",
+          "name": "pomieszczenie 17",
+          "area": 85,
+          "cube": 255,
+          "heating": 20,
+          "light": 32
+        },
+        {
+          "id": "pom19",
+          "name": "pomieszczenie 19",
+          "area": 111,
+          "cube": 333,
+          "heating": 23,
+          "light": 24
+        },
+        {
+          "id": "pom20",
+          "name": "pomieszczenie 20",
+          "area": 130,
+          "cube": 390,
+          "heating": 15,
+          "light": 34
+        },
+        {
+          "id": "pom21",
+          "name": "pomieszczenie 21",
+          "area": 89,
+          "cube": 267,
+          "heating": 38,
+          "light": 11
+        },
+        {
+          "id": "pom22",
+          "name": "pomieszczenie 22",
+          "area": 66,
+          "cube": 198,
+          "heating": 13,
+          "light": 33
+        },
+        {
+          "id": "pom23",
+          "name": "pomieszczenie 23",
+          "area": 71,
+          "cube": 213,
+          "heating": 17,
+          "light": 14
+        },
+        {
+          "id": "pom25",
+          "name": "pomieszczenie 25",
+          "area": 95,
+          "cube": 285,
+          "heating": 27,
+          "light": 36
+        },
+        {
+          "id": "pom26",
+          "name": "pomieszczenie 26",
+          "area": 146,
+          "cube": 438,
+          "heating": 19,
+          "light": 30
+        },
+        {
+          "id": "pom27",
+          "name": "pomieszczenie 27",
+          "area": 94,
+          "cube": 282,
+          "heating": 16,
+          "light": 29
+        },
+        {
+          "id": "pom28",
+          "name": "pomieszczenie 28",
+          "area": 128,
+          "cube": 384,
+          "heating": 15,
+          "light": 32
+        },
+        {
+          "id": "pom29",
+          "name": "pomieszczenie 29",
+          "area": 46,
+          "cube": 138,
+          "heating": 33,
+          "light": 34
+        }
+      ]
+    }
+  ]
+}
