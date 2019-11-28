@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="add 4 basic classes">
+    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="added json input - output&#10;added conversion into classes&#10;added function zwrocWynik for class Lokalizacja">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20190722.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ioprojectarchitecture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ioprojectarchitecture.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Budynek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Budynek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Lokalizacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Lokalizacja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Pomieszczenie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Pomieszczenie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Poziom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Poziom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/BuildingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/BuildingInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/BuildingInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/BuildingInfoController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -54,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BuildingInfoApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -84,6 +93,13 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuildingInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ioprojectarchitecture" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.put.poznan.transformer.app.BuildingInfoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,7 +142,8 @@
       <workItem from="1513093084300" duration="8069000" />
       <workItem from="1572900693808" duration="663000" />
       <workItem from="1574681000515" duration="571000" />
-      <workItem from="1574934665221" duration="2005000" />
+      <workItem from="1574934665221" duration="4608000" />
+      <workItem from="1574951465269" duration="4374000" />
     </task>
     <task id="LOCAL-00001" summary="add 4 basic classes">
       <created>1574935642416</created>
@@ -135,7 +152,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574935642416</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="action post method">
+      <created>1574938933942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574938933942</updated>
+    </task>
+    <task id="LOCAL-00003" summary="unused commented">
+      <created>1574939019671</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574939019671</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +187,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add 4 basic classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 4 basic classes" />
+    <MESSAGE value="action post method" />
+    <MESSAGE value="unused commented" />
+    <MESSAGE value="added json input - output&#10;added conversion into classes&#10;added function zwrocWynik for class Lokalizacja" />
+    <option name="LAST_COMMIT_MESSAGE" value="added json input - output&#10;added conversion into classes&#10;added function zwrocWynik for class Lokalizacja" />
   </component>
 </project>

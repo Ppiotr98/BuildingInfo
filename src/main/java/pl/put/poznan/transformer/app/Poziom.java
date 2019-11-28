@@ -1,16 +1,17 @@
 package pl.put.poznan.transformer.app;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class Poziom extends Lokalizacja {
     private Set<Pomieszczenie> pomieszczenia = new HashSet<>();
 
-    public Poziom(int id) {
+    public Poziom(String id) {
         super(id);
     }
 
-    public Poziom(int id, String name) {
+    public Poziom(String id, String name) {
         super(id, name);
     }
 
@@ -19,7 +20,20 @@ public class Poziom extends Lokalizacja {
         /* TODO */
     }
 
+    public void addPomieszczenia(Pomieszczenie pomieszczenie){
+        this.pomieszczenia.add(pomieszczenie);
+    }
+
     public Set<Pomieszczenie> getPomieszczenia() {
         return pomieszczenia;
+    }
+
+    public float getFullArea(){
+        float res = 0;
+        for (Iterator<Pomieszczenie> it = this.pomieszczenia.iterator(); it.hasNext(); ){
+            Pomieszczenie pom_tmp = it.next();
+            res += pom_tmp.getArea();
+        }
+        return res;
     }
 }

@@ -6,7 +6,7 @@ public class Pomieszczenie extends Lokalizacja {
     private float heating;
     private int light;
 
-    public Pomieszczenie(int id, float area, float cube, float heating, int light) {
+    public Pomieszczenie(String id, float area, float cube, float heating, int light) {
         super(id);
         this.area = area;
         this.cube = cube;
@@ -14,7 +14,7 @@ public class Pomieszczenie extends Lokalizacja {
         this.light = light;
     }
 
-    public Pomieszczenie(int id, String name, float area, float cube, float heating, int light) {
+    public Pomieszczenie(String id, String name, float area, float cube, float heating, int light) {
         super(id, name);
         this.area = area;
         this.cube = cube;
