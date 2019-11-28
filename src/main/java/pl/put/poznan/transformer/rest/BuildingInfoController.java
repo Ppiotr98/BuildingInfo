@@ -14,7 +14,7 @@ public class BuildingInfoController {
     private static final Logger logger = LoggerFactory.getLogger(BuildingInfoController.class);
 
     // nie potrzebujemy metody get ponieważ musimy wysłać coś. UNUSED
-    @RequestMapping(method = RequestMethod.GET, produces = "application/json")
+    /* @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public String get(@PathVariable String action,
                               @RequestParam(value="transforms", defaultValue="upper,escape") String[] transforms) {
 
@@ -26,6 +26,7 @@ public class BuildingInfoController {
         BuildingInfo transformer = new BuildingInfo(transforms);
         return transformer.transform(action);
     }
+     */
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json")
     public String post(@PathVariable String action,
