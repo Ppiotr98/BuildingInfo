@@ -36,37 +36,41 @@ public class Budynek extends Lokalizacja {
     // skoro i tak zwrocWynik wywołujemy na budynku w kontrolerze, to równie dobrze ta metoda moze być tutaj
     // wtedy możemy wywołać odpowiednie metody na poziomach w secie
     public JSONObject zwrocWynik(String action, String pom, String poz, boolean bud) {
-        Set<String> allowed_actions = new HashSet<>(Arrays.asList("area", "cube"));
-        JSONObject jo = new JSONObject();
-        if (allowed_actions.contains(action)) {
-            if (action.equals("area")) {
-                if (bud) { // dla całego budynku
-                    jo.put("result", "success");
-                    float res = getFullArea();
-                    jo.put("Full area of building", res);
-                } else { // dla konkretnego poziomu
-                    Poziom poziom = findPoziom(poz);
-                    if (poziom!=null) { // poziom o takim id istnieje
-                        if (pom == null) { // nie podano pomieszczenia - chemy powierzchnie całego poziomu
-                            jo.put("result", "success");
-                            float res = poziom.getFullArea();
-                            jo.put("Full area of " + poziom.getName(), res);
-                        } else { // chcemy powierzchnie konkretnego pomieszczenia
-                            Pomieszczenie pomieszczenie = poziom.findPomieszczenie(pom);
-                            if (pomieszczenie!=null) { //jezeli takie pomeiszczenie istnieje na tym poziomie
-                                jo.put("result", "success");
-                                float res = pomieszczenie.getFullArea();
-                                jo.put("Full area of " + pomieszczenie.getName() + " at " + poziom.getName(), res);
-                            } else jo.put("result", "failure");
-                        }
-                    } else jo.put("result", "failure");
-                }
-            }
-
+        switch (action) {
+            case "area" :
+                return actionArea(pom, poz, bud);
             // TODO: other methods
 
-        } else jo.put("result", "failure");
+            default:
+                return new JSONObject() {{
+                    put("result", "failure");
+                }};
+        }
+    }
 
+    public JSONObject actionArea(String pom, String poz, boolean bud) {
+        JSONObject jo = new JSONObject();
+        if (bud) { // dla całego budynku
+            jo.put("result", "success");
+            float res = getFullArea();
+            jo.put("Full area of building", res);
+        } else { // dla konkretnego poziomu
+            Poziom poziom = findPoziom(poz);
+            if (poziom!=null) { // poziom o takim id istnieje
+                if (pom == null) { // nie podano pomieszczenia - chemy powierzchnie całego poziomu
+                    jo.put("result", "success");
+                    float res = poziom.getFullArea();
+                    jo.put("Full area of " + poziom.getName(), res);
+                } else { // chcemy powierzchnie konkretnego pomieszczenia
+                    Pomieszczenie pomieszczenie = poziom.findPomieszczenie(pom);
+                    if (pomieszczenie!=null) { //jezeli takie pomeiszczenie istnieje na tym poziomie
+                        jo.put("result", "success");
+                        float res = pomieszczenie.getFullArea();
+                        jo.put("Full area of " + pomieszczenie.getName() + " at " + poziom.getName(), res);
+                    } else jo.put("result", "failure");
+                }
+            } else jo.put("result", "failure");
+        }
         return jo;
     }
 
