@@ -21,6 +21,7 @@ public abstract class Lokalizacja {
     public String getName() {
         return name;
     }
+
     public float getFullArea(){
         return 0;
     }

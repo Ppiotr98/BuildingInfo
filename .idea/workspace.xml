@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="obliczanie powierzchni na podstawie id konkretnych parametrow">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Budynek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Budynek.java" afterDir="false" />
-    </list>
+    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="uproszczenie metod zwrocWynik i utworzenie actionArea" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +139,7 @@
       <workItem from="1574681000515" duration="571000" />
       <workItem from="1574934665221" duration="4608000" />
       <workItem from="1574951465269" duration="5981000" />
-      <workItem from="1575131047674" duration="7288000" />
+      <workItem from="1575131047674" duration="7536000" />
     </task>
     <task id="LOCAL-00001" summary="add 4 basic classes">
       <created>1574935642416</created>
@@ -186,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575140659833</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="uproszczenie metod zwrocWynik i utworzenie actionArea">
+      <created>1575141409501</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575141409501</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +216,7 @@
     <MESSAGE value="added json input - output&#10;added conversion into classes&#10;added function zwrocWynik for class Lokalizacja" />
     <MESSAGE value="added comments&#10;reformated" />
     <MESSAGE value="obliczanie powierzchni na podstawie id konkretnych parametrow" />
-    <option name="LAST_COMMIT_MESSAGE" value="obliczanie powierzchni na podstawie id konkretnych parametrow" />
+    <MESSAGE value="uproszczenie metod zwrocWynik i utworzenie actionArea" />
+    <option name="LAST_COMMIT_MESSAGE" value="uproszczenie metod zwrocWynik i utworzenie actionArea" />
   </component>
 </project>

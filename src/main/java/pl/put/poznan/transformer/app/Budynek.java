@@ -35,10 +35,10 @@ public class Budynek extends Lokalizacja {
 
     // skoro i tak zwrocWynik wywołujemy na budynku w kontrolerze, to równie dobrze ta metoda moze być tutaj
     // wtedy możemy wywołać odpowiednie metody na poziomach w secie
-    public JSONObject zwrocWynik(String action, String pom, String poz, boolean bud) {
+    public JSONObject zwrocWynik(String action, String pom, String poz) {
         switch (action) {
             case "area" :
-                return actionArea(pom, poz, bud);
+                return actionArea(pom, poz);
             // TODO: other methods
 
             default:
@@ -48,9 +48,9 @@ public class Budynek extends Lokalizacja {
         }
     }
 
-    public JSONObject actionArea(String pom, String poz, boolean bud) {
+    public JSONObject actionArea(String pom, String poz) {
         JSONObject jo = new JSONObject();
-        if (bud) { // dla całego budynku
+        if (poz == null) { // dla całego budynku
             jo.put("result", "success");
             float res = getFullArea();
             jo.put("Full area of building", res);
