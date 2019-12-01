@@ -26,15 +26,15 @@ public class Pomieszczenie extends Lokalizacja {
         return area;
     }
 
-    public float getCube() {
+    public float getFullCube() {
         return cube;
     }
 
-    public float getHeating() {
+    public float getFullHeating() {
         return heating;
     }
 
-    public int getLight() {
+    public int getFullLight() {
         return light;
     }
 }

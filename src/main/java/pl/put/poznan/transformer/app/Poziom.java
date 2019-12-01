@@ -31,6 +31,30 @@ public class Poziom extends Lokalizacja {
         return res;
     }
 
+    public float getFullCube(){
+        float res = 0;
+        for (Pomieszczenie pom_tmp : this.pomieszczenia) {
+            res += pom_tmp.getFullCube();
+        }
+        return res;
+    }
+
+    public float getFullHeating(){
+        float res = 0;
+        for (Pomieszczenie pom_tmp : this.pomieszczenia) {
+            res += pom_tmp.getFullHeating();
+        }
+        return res;
+    }
+
+    public float getFullLight(){
+        float res = 0;
+        for (Pomieszczenie pom_tmp : this.pomieszczenia) {
+            res += pom_tmp.getFullLight();
+        }
+        return res;
+    }
+
     // zwraca pomieszczenie, jeżeli posiada je na liście
     public Pomieszczenie findPomieszczenie(String pom) {
         for (Pomieszczenie tmp : this.pomieszczenia) {
