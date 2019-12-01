@@ -14,11 +14,6 @@ public class Poziom extends Lokalizacja {
     public Poziom(String id, String name) {
         super(id, name);
     }
-    // because we add rooms in addPomieszczenia() method we don't really need this function. To remove?     @daniktl
-    public void setPomieszczenia(Set<Pomieszczenie> pomieszczenia) {
-        this.pomieszczenia = pomieszczenia;
-        /* TODO */
-    }
 
     public void addPomieszczenia(Pomieszczenie pomieszczenie){
         this.pomieszczenia.add(pomieszczenie);
@@ -30,10 +25,17 @@ public class Poziom extends Lokalizacja {
 
     public float getFullArea(){
         float res = 0;
-        for (Iterator<Pomieszczenie> it = this.pomieszczenia.iterator(); it.hasNext(); ){
-            Pomieszczenie pom_tmp = it.next();
-            res += pom_tmp.getArea();
+        for (Pomieszczenie pom_tmp : this.pomieszczenia) {
+            res += pom_tmp.getFullArea();
         }
         return res;
+    }
+
+    // zwraca pomieszczenie, jeżeli posiada je na liście
+    public Pomieszczenie findPomieszczenie(String pom) {
+        for (Pomieszczenie tmp : this.pomieszczenia) {
+            if (tmp.getId().equals(pom)) return tmp;
+        }
+        return null;
     }
 }

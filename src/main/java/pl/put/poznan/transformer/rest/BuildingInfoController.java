@@ -19,7 +19,6 @@ public class BuildingInfoController {
     public String post(@PathVariable("action") String action,
                       @RequestParam(name="pom", required = false) String pom,
                       @RequestParam(name="poz", required = false) String poz,
-                      @RequestParam(name="bud", required = false) boolean bud,
                       @RequestBody(required = false) String payload) {
 
         // log the parameters
@@ -63,7 +62,7 @@ public class BuildingInfoController {
             budynek.addPoziom(poz_tmp);
         }
         // return result according to the request
-        return budynek.zwrocWynik(action, pom, poz, bud).toString();
+        return budynek.zwrocWynik(action, pom, poz).toString();
     }
 
 

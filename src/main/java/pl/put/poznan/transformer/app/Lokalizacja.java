@@ -21,19 +21,8 @@ public abstract class Lokalizacja {
     public String getName() {
         return name;
     }
+
     public float getFullArea(){
         return 0;
-    };
-
-    public JSONObject zwrocWynik(String action, String pom, String poz, boolean bud) {
-        String[] allowed_actions = {"area", ""};
-        JSONObject jo = new JSONObject();
-        jo.put("result", "success");
-        if (action.equals("full_area")){
-            float res = getFullArea();
-            jo.put("Full area", res);
-        }
-        // TODO: other methods
-        return jo;
     }
 }
