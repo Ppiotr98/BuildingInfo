@@ -26,7 +26,7 @@ public abstract class Lokalizacja {
     };
 
     public JSONObject zwrocWynik(String action, String pom, String poz, boolean bud) {
-        String[] allowed_actions = {"area", ""};
+        String[] allowed_actions = {"area", "full_area"};
         JSONObject jo = new JSONObject();
         jo.put("result", "success");
         if (action.equals("full_area")){

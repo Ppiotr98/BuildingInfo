@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="added comments&#10;reformated">
-      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="added json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Lokalizacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Lokalizacja.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +135,7 @@
       <workItem from="1572900693808" duration="663000" />
       <workItem from="1574681000515" duration="571000" />
       <workItem from="1574934665221" duration="4608000" />
-      <workItem from="1574951465269" duration="5981000" />
+      <workItem from="1574951465269" duration="7074000" />
     </task>
     <task id="LOCAL-00001" summary="add 4 basic classes">
       <created>1574935642416</created>
@@ -172,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574978523980</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added json">
+      <created>1574979638777</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574979638777</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +204,7 @@
     <MESSAGE value="unused commented" />
     <MESSAGE value="added json input - output&#10;added conversion into classes&#10;added function zwrocWynik for class Lokalizacja" />
     <MESSAGE value="added comments&#10;reformated" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments&#10;reformated" />
+    <MESSAGE value="added json" />
+    <option name="LAST_COMMIT_MESSAGE" value="added json" />
   </component>
 </project>
