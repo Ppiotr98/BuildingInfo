@@ -15,7 +15,7 @@ public class Poziom extends Lokalizacja {
         super(id, name);
     }
 
-    public void addPomieszczenia(Pomieszczenie pomieszczenie){
+    public void addPomieszczenie(Pomieszczenie pomieszczenie){
         this.pomieszczenia.add(pomieszczenie);
     }
 

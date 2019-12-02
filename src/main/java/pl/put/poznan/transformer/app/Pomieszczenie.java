@@ -4,7 +4,7 @@ public class Pomieszczenie extends Lokalizacja {
     private float area;
     private float cube;
     private float heating;
-    private int light;
+    private float light;
 
     public Pomieszczenie(String id, float area, float cube, float heating, int light) {
         super(id);

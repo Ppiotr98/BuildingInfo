@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import pl.put.poznan.transformer.app.Budynek;
 import pl.put.poznan.transformer.app.Pomieszczenie;
 import pl.put.poznan.transformer.app.Poziom;
-import pl.put.poznan.transformer.logic.BuildingInfo;
 
 
 @RestController
@@ -56,7 +55,7 @@ public class BuildingInfoController {
                 int light = pom_tmp_jo.getInt("light");
                 Pomieszczenie pom_tmp = new Pomieszczenie(id_pom, name_pom, area, cube, heating, light);
                 // add object into level's set
-                poz_tmp.addPomieszczenia(pom_tmp);
+                poz_tmp.addPomieszczenie(pom_tmp);
             }
             // add level into building's set
             budynek.addPoziom(poz_tmp);
