@@ -22,7 +22,7 @@ public class Pomieszczenie extends Lokalizacja {
         this.light = light;
     }
 
-    public float getArea() {
+    public float getFullArea() {
         return area;
     }
 
