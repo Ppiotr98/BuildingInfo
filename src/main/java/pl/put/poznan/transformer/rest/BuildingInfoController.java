@@ -9,11 +9,26 @@ import pl.put.poznan.transformer.app.Pomieszczenie;
 import pl.put.poznan.transformer.app.Poziom;
 
 
+/**
+ * <p>BuildingInfoController class.</p>
+ *
+ * @author daniktl
+ * @version $Id: $Id
+ */
 @RestController
 public class BuildingInfoController {
 
     private static final Logger logger = LoggerFactory.getLogger(BuildingInfoController.class);
 
+    /**
+     * <p>post.</p>
+     *
+     * @param action a {@link java.lang.String} object.
+     * @param pom a {@link java.lang.String} object.
+     * @param poz a {@link java.lang.String} object.
+     * @param payload a {@link java.lang.String} object.
+     * @return a {@link java.lang.String} object.
+     */
     @RequestMapping(value = "/{action}", method = RequestMethod.POST, produces = "application/json")
     public String post(@PathVariable("action") String action,
                       @RequestParam(name="pom", required = false) String pom,

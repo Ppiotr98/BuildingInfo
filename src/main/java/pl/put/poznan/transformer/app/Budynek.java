@@ -5,6 +5,12 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+/**
+ * <p>Budynek class.</p>
+ *
+ * @author daniktl
+ * @version $Id: $Id
+ */
 public class Budynek extends Lokalizacja {
     private Set<Poziom> poziomy = new HashSet<>();
 
@@ -16,7 +22,11 @@ public class Budynek extends Lokalizacja {
     }
 
     /**
+     * <p>Constructor for Budynek.</p>
+     *
      * @deprecated konstruktor wykorzystywany wcześniej do tworzenia objektów klasy Budynek
+     * @param id a {@link java.lang.String} object.
+     * @param name a {@link java.lang.String} object.
      */
     public Budynek(String id, String name) {
         super(id, name);
@@ -25,6 +35,7 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda która umożliwia dodawanie poziomów na listę poziomów budynku
+     *
      * @param poziom - objekt typu poziom, który chcemy dodać na listę poziomów dla tego budynku
      */
     public void addPoziom(Poziom poziom) {
@@ -33,6 +44,7 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda która zwraca powierzchnie całęgo budynku
+     *
      * @return float
      */
     public float getFullArea(){
@@ -47,6 +59,7 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda która zwraca kubaturę całęgo budynku
+     *
      * @return float
      */
     public float getFullCube(){
@@ -61,6 +74,7 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda która zwraca poziom zyżycia energii dla całęgo budynku
+     *
      * @return float
      */
     public float getFullHeating(){
@@ -75,6 +89,7 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda która zwraca łączną moc oświetlenia dla całęgo budynku
+     *
      * @return float
      */
     public float getFullLight(){
@@ -92,6 +107,7 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Główna metoda, wywoływana w BuildingInfoController.
+     *
      * @param action jakie dane użytkownik chce dostać. Dostępnę są następne akcje:
      *               1) area - zwróć powierzchnie dla całego budynku/poziomu/pomieszczenia
      *               2) cube - zwróć kubaturę dla całego budynku/poziomu/pomieszczenia
@@ -124,6 +140,7 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda, zwracająca odpowiednią powierzchnię dla budynku, poziomu bądż pomieszczenia
+     *
      * @param pom dla jakiego pomieszczenia chcemy dostać informację (jeśli null - nie interesuje)
      * @param poz dla jakiego poziomu chcemy dostać informację (jeśli null - nie interesuje)
      * @return objekt typu JSON, który potem zwracamy użytkownikowi:
@@ -157,6 +174,12 @@ public class Budynek extends Lokalizacja {
     }
 
     // zwraca pomieszczenie, jeżeli posiada je na liście
+    /**
+     * <p>findPoziom.</p>
+     *
+     * @param pom a {@link java.lang.String} object.
+     * @return a {@link pl.put.poznan.transformer.app.Poziom} object.
+     */
     public Poziom findPoziom(String pom) {
         for (Poziom tmp : this.poziomy) {
             if (tmp.getId().equals(pom)) return tmp;
@@ -164,6 +187,13 @@ public class Budynek extends Lokalizacja {
         return null;
     }
 
+    /**
+     * <p>actionCube.</p>
+     *
+     * @param pom a {@link java.lang.String} object.
+     * @param poz a {@link java.lang.String} object.
+     * @return a {@link org.json.JSONObject} object.
+     */
     public JSONObject actionCube(String pom, String poz) {
         JSONObject jo = new JSONObject();
         if (poz == null) { // dla całego budynku
@@ -190,6 +220,13 @@ public class Budynek extends Lokalizacja {
         return jo;
     }
 
+    /**
+     * <p>actionHeating.</p>
+     *
+     * @param pom a {@link java.lang.String} object.
+     * @param poz a {@link java.lang.String} object.
+     * @return a {@link org.json.JSONObject} object.
+     */
     public JSONObject actionHeating(String pom, String poz) {
         JSONObject jo = new JSONObject();
         if (poz == null) { // dla całego budynku
@@ -216,6 +253,13 @@ public class Budynek extends Lokalizacja {
         return jo;
     }
 
+    /**
+     * <p>actionLight.</p>
+     *
+     * @param pom a {@link java.lang.String} object.
+     * @param poz a {@link java.lang.String} object.
+     * @return a {@link org.json.JSONObject} object.
+     */
     public JSONObject actionLight(String pom, String poz) {
         JSONObject jo = new JSONObject();
         if (poz == null) { // dla całego budynku

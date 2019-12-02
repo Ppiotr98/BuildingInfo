@@ -5,16 +5,6 @@
     <option name="OPTION_SCOPE" value="private" />
     <option name="OPTION_INCLUDE_LIBS" value="true" />
   </component>
-  <component name="MavenCompilerTasksManager">
-    <option name="beforeCompileTasks">
-      <set>
-        <MavenCompilerTask>
-          <option name="goal" value="org.apache.maven.plugins:maven-javadoc-plugin:3.1.1:test-javadoc" />
-          <option name="projectPath" value="$PROJECT_DIR$/pom.xml" />
-        </MavenCompilerTask>
-      </set>
-    </option>
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
