@@ -1,4 +1,5 @@
 package pl.put.poznan.transformer.app;
+import org.json.JSONObject;
 
 public abstract class Lokalizacja {
     private String id;
@@ -21,20 +22,13 @@ public abstract class Lokalizacja {
         return name;
     }
 
-    public float getFullArea(){
-        return 0;
-    };
 
-    public float getFullHeating(){
-        return 0;
-    }
+    public abstract float getFullArea();
 
-    public float getFullLight(){
-        return 0;
-    }
+    public abstract float getFullHeating();
 
-    public float getFullCube(){
-        return 0;
-    }
+    public abstract float getFullLight();
+
+    public abstract float getFullCube();
 
 }
