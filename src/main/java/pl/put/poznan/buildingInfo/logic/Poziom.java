@@ -1,4 +1,4 @@
-package pl.put.poznan.buildingInfo.app;
+package pl.put.poznan.buildingInfo.logic;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -105,7 +105,7 @@ public class Poziom extends Lokalizacja {
      * Znajdż pomieszczenie o danym identyfikatorze jeśli istnieje
      *
      * @param pom identyfikator pomieszczenia typu {@link java.lang.String}.
-     * @return objekt typu {@link pl.put.poznan.buildingInfo.app.Pomieszczenie} jeśli pomieszczenia o danym identyfikatorze istnieje na liście pomieszczeń dla tego poziomu - otherwise null.
+     * @return objekt typu {@link Pomieszczenie} jeśli pomieszczenia o danym identyfikatorze istnieje na liście pomieszczeń dla tego poziomu - otherwise null.
      */
     public Pomieszczenie findPomieszczenie(String pom) {
         for (Pomieszczenie tmp : this.pomieszczenia) {

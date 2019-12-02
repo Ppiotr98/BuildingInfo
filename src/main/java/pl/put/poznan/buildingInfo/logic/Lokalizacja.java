@@ -1,4 +1,4 @@
-package pl.put.poznan.buildingInfo.app;
+package pl.put.poznan.buildingInfo.logic;
 
 /**
  * <p>Klasa abstrakcyjna Lokalizacja.</p>

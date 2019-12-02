@@ -1,4 +1,4 @@
-package pl.put.poznan.buildingInfo.app;
+package pl.put.poznan.buildingInfo.logic;
 
 import org.json.JSONObject;
 import java.util.HashSet;
@@ -177,7 +177,7 @@ public class Budynek extends Lokalizacja {
      * Metoda która zwraca poziom na którym istnieje pomieszczenie o dannym identyfikatorze.
      * Jeżeli pomieszczenie z tym identyfikatorem nie istnieje - zwraca null
      * @param pom id pomiesczenia typu {@link java.lang.String}.
-     * @return objekt klasy {@link pl.put.poznan.buildingInfo.app.Poziom}.
+     * @return objekt klasy {@link Poziom}.
      */
     public Poziom findPoziom(String pom) {
         for (Poziom tmp : this.poziomy) {

@@ -4,9 +4,9 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
-import pl.put.poznan.buildingInfo.app.Budynek;
-import pl.put.poznan.buildingInfo.app.Pomieszczenie;
-import pl.put.poznan.buildingInfo.app.Poziom;
+import pl.put.poznan.buildingInfo.logic.Budynek;
+import pl.put.poznan.buildingInfo.logic.Pomieszczenie;
+import pl.put.poznan.buildingInfo.logic.Poziom;
 
 
 /**
