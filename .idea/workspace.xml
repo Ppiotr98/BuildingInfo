@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="mały błąd, float zamiast int">
+    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="drobne poprawy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Lokalizacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Lokalizacja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Poziom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Poziom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/BuildingInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/BuildingInfoController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +149,7 @@
       <workItem from="1574934665221" duration="4608000" />
       <workItem from="1574951465269" duration="5981000" />
       <workItem from="1575131047674" duration="7536000" />
-      <workItem from="1575284593163" duration="2962000" />
+      <workItem from="1575284593163" duration="4158000" />
     </task>
     <task id="LOCAL-00001" summary="add 4 basic classes">
       <created>1574935642416</created>
@@ -217,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575284897575</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="drobne poprawy">
+      <created>1575288096650</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575288096650</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,36 +249,37 @@
     <MESSAGE value="obliczanie powierzchni na podstawie id konkretnych parametrow" />
     <MESSAGE value="uproszczenie metod zwrocWynik i utworzenie actionArea" />
     <MESSAGE value="mały błąd, float zamiast int" />
-    <option name="LAST_COMMIT_MESSAGE" value="mały błąd, float zamiast int" />
+    <MESSAGE value="drobne poprawy" />
+    <option name="LAST_COMMIT_MESSAGE" value="drobne poprawy" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1575208583037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1575208583037" />
-    <state x="366" y="6" key="CommitChangelistDialog2" timestamp="1575284896710">
+    <state x="366" y="6" key="CommitChangelistDialog2" timestamp="1575288095811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="366" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575284896710" />
-    <state width="1493" height="81" key="GridCell.Tab.0.bottom" timestamp="1575288052335">
+    <state x="366" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575288095811" />
+    <state width="1493" height="81" key="GridCell.Tab.0.bottom" timestamp="1575288100027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="81" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575288052335" />
+    <state width="1493" height="81" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575288100027" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575213418051" />
-    <state width="1493" height="81" key="GridCell.Tab.0.center" timestamp="1575288052334">
+    <state width="1493" height="81" key="GridCell.Tab.0.center" timestamp="1575288100026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="81" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575288052334" />
+    <state width="1493" height="81" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575288100026" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575213418051" />
-    <state width="1493" height="81" key="GridCell.Tab.0.left" timestamp="1575288052334">
+    <state width="1493" height="81" key="GridCell.Tab.0.left" timestamp="1575288100025">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="81" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575288052334" />
+    <state width="1493" height="81" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575288100025" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575213418050" />
-    <state width="1493" height="81" key="GridCell.Tab.0.right" timestamp="1575288052335">
+    <state width="1493" height="81" key="GridCell.Tab.0.right" timestamp="1575288100026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="81" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575288052335" />
+    <state width="1493" height="81" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575288100026" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575213418051" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1575284666035">
       <screen x="0" y="0" width="1536" height="824" />
