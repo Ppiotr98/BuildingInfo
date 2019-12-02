@@ -1,5 +1,4 @@
 package pl.put.poznan.transformer.app;
-import org.json.JSONObject;
 
 public abstract class Lokalizacja {
     private String id;
@@ -21,7 +20,6 @@ public abstract class Lokalizacja {
     public String getName() {
         return name;
     }
-
 
     public float getFullArea(){
         return 0;

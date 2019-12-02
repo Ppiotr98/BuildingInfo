@@ -34,7 +34,7 @@ public class Pomieszczenie extends Lokalizacja {
         return heating;
     }
 
-    public int getFullLight() {
+    public float getFullLight() {
         return light;
     }
 }

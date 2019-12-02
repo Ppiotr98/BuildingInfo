@@ -1,28 +1,40 @@
 package pl.put.poznan.transformer.app;
 
 import org.json.JSONObject;
-
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-
 public class Budynek extends Lokalizacja {
     private Set<Poziom> poziomy = new HashSet<>();
 
+    /**
+     * konstruktor budynku. Ponieważ przyjmujemy jeden budynek, tworzymy objekt klasy Budynek ze stałym identyfikatorem
+     */
     public Budynek() {
         super("1");
     }
 
+    /**
+     * @deprecated konstruktor wykorzystywany wcześniej do tworzenia objektów klasy Budynek
+     */
     public Budynek(String id, String name) {
         super(id, name);
     }
 
+
+    /**
+     * Metoda która umożliwia dodawanie poziomów na listę poziomów budynku
+     * @param poziom - objekt typu poziom, który chcemy dodać na listę poziomów dla tego budynku
+     */
     public void addPoziom(Poziom poziom) {
         this.poziomy.add(poziom);
     }
 
+    /**
+     * Metoda która zwraca powierzchnie całęgo budynku
+     * @return float
+     */
     public float getFullArea(){
         float res = 0;
         // calculate full building area
@@ -33,6 +45,10 @@ public class Budynek extends Lokalizacja {
         return res;
     }
 
+    /**
+     * Metoda która zwraca kubaturę całęgo budynku
+     * @return float
+     */
     public float getFullCube(){
         float res = 0;
         // calculate full building cube
@@ -43,6 +59,10 @@ public class Budynek extends Lokalizacja {
         return res;
     }
 
+    /**
+     * Metoda która zwraca poziom zyżycia energii dla całęgo budynku
+     * @return float
+     */
     public float getFullHeating(){
         float res = 0;
         // calculate full building heating
@@ -53,6 +73,10 @@ public class Budynek extends Lokalizacja {
         return res;
     }
 
+    /**
+     * Metoda która zwraca łączną moc oświetlenia dla całęgo budynku
+     * @return float
+     */
     public float getFullLight(){
         float res = 0;
         // calculate full building light
@@ -65,6 +89,20 @@ public class Budynek extends Lokalizacja {
 
     // skoro i tak zwrocWynik wywołujemy na budynku w kontrolerze, to równie dobrze ta metoda moze być tutaj
     // wtedy możemy wywołać odpowiednie metody na poziomach w secie
+
+    /**
+     * Główna metoda, wywoływana w BuildingInfoController.
+     * @param action jakie dane użytkownik chce dostać. Dostępnę są następne akcje:
+     *               1) area - zwróć powierzchnie dla całego budynku/poziomu/pomieszczenia
+     *               2) cube - zwróć kubaturę dla całego budynku/poziomu/pomieszczenia
+     *               3) heating - zwróć poziom zyżycia energii dla całęgo budynku/poziomu/pomieszczenia
+     *               4) light - zwróć łączną moc oświetlenia dla całęgo budynku/poziomu/pomieszczenia
+     * @param pom dla jakiego pomieszczenia chcemy dostać informację (jeśli null - nie interesuje)
+     * @param poz dla jakiego poziomu chcemy dostać informację (jeśli null - nie interesuje)
+     * @return objekt typu JSON, który potem zwracamy użytkownikowi:
+     *          1) result - czy udało się obliczyć to co chciał użytkownik
+     *          2) message - wynik bądż wiadomość błędu
+     */
     public JSONObject zwrocWynik(String action, String pom, String poz) {
         switch (action) {
             case "area" :
@@ -79,15 +117,24 @@ public class Budynek extends Lokalizacja {
             default:
                 return new JSONObject() {{
                     put("result", "failure");
+                    put("message", "Wrong action requested");
                 }};
         }
     }
 
+    /**
+     * Metoda, zwracająca odpowiednią powierzchnię dla budynku, poziomu bądż pomieszczenia
+     * @param pom dla jakiego pomieszczenia chcemy dostać informację (jeśli null - nie interesuje)
+     * @param poz dla jakiego poziomu chcemy dostać informację (jeśli null - nie interesuje)
+     * @return objekt typu JSON, który potem zwracamy użytkownikowi:
+     *          1) result - czy udało się obliczyć to co chciał użytkownik
+     *          2) message - wynik bądż wiadomość błędu
+     */
     public JSONObject actionArea(String pom, String poz) {
         JSONObject jo = new JSONObject();
         if (poz == null) { // dla całego budynku
             jo.put("result", "success");
-            float res = getFullArea();
+            float res = this.getFullArea();
             jo.put("Full area of building", res);
         } else { // dla konkretnego poziomu
             Poziom poziom = findPoziom(poz);
