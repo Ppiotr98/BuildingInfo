@@ -1,4 +1,4 @@
-package pl.put.poznan.transformer.app;
+package pl.put.poznan.buildingInfo.app;
 
 import org.json.JSONObject;
 import java.util.HashSet;
@@ -6,27 +6,30 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
- * <p>Budynek class.</p>
+ * Klasa budynek
  *
- * @author daniktl
+ * @author daniktl, vieja, ppiotr98
  * @version $Id: $Id
  */
 public class Budynek extends Lokalizacja {
+    /**
+     * Lista poziomów w {@link Budynek}
+     */
     private Set<Poziom> poziomy = new HashSet<>();
 
     /**
-     * konstruktor budynku. Ponieważ przyjmujemy jeden budynek, tworzymy objekt klasy Budynek ze stałym identyfikatorem
+     * Tworzy budynek ze stałym identyfikatorem 1
      */
     public Budynek() {
         super("1");
     }
 
     /**
-     * <p>Constructor for Budynek.</p>
+     * Konstruktor {@link Budynek}
      *
      * @deprecated konstruktor wykorzystywany wcześniej do tworzenia objektów klasy Budynek
-     * @param id a {@link java.lang.String} object.
-     * @param name a {@link java.lang.String} object.
+     * @param id identyfikator budynku typu {@link java.lang.String}.
+     * @param name nazwa budynku typu {@link java.lang.String}.
      */
     public Budynek(String id, String name) {
         super(id, name);
@@ -35,8 +38,7 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda która umożliwia dodawanie poziomów na listę poziomów budynku
-     *
-     * @param poziom - objekt typu poziom, który chcemy dodać na listę poziomów dla tego budynku
+     * @param poziom objekt typu {@link Poziom}, który chcemy dodać na listę poziomów dla tego budynku
      */
     public void addPoziom(Poziom poziom) {
         this.poziomy.add(poziom);
@@ -44,8 +46,7 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda która zwraca powierzchnie całęgo budynku
-     *
-     * @return float
+     * @return float powierzchnia
      */
     public float getFullArea(){
         float res = 0;
@@ -59,8 +60,7 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda która zwraca kubaturę całęgo budynku
-     *
-     * @return float
+     * @return float kubatura
      */
     public float getFullCube(){
         float res = 0;
@@ -75,7 +75,7 @@ public class Budynek extends Lokalizacja {
     /**
      * Metoda która zwraca poziom zyżycia energii dla całęgo budynku
      *
-     * @return float
+     * @return float zużycie energii
      */
     public float getFullHeating(){
         float res = 0;
@@ -106,16 +106,16 @@ public class Budynek extends Lokalizacja {
     // wtedy możemy wywołać odpowiednie metody na poziomach w secie
 
     /**
-     * Główna metoda, wywoływana w BuildingInfoController.
+     * Główna metoda, wywoływana w {@link pl.put.poznan.buildingInfo.rest.BuildingInfoController}.
      *
      * @param action jakie dane użytkownik chce dostać. Dostępnę są następne akcje:
      *               1) area - zwróć powierzchnie dla całego budynku/poziomu/pomieszczenia
      *               2) cube - zwróć kubaturę dla całego budynku/poziomu/pomieszczenia
      *               3) heating - zwróć poziom zyżycia energii dla całęgo budynku/poziomu/pomieszczenia
      *               4) light - zwróć łączną moc oświetlenia dla całęgo budynku/poziomu/pomieszczenia
-     * @param pom dla jakiego pomieszczenia chcemy dostać informację (jeśli null - nie interesuje)
-     * @param poz dla jakiego poziomu chcemy dostać informację (jeśli null - nie interesuje)
-     * @return objekt typu JSON, który potem zwracamy użytkownikowi:
+     * @param pom id pomiesczenia typu {@link java.lang.String} dla którego chcemy otrzymać informację (jeśli null - nie interesuje)
+     * @param poz id pomiesczenia typu {@link java.lang.String} dla którego poziomu chcemy otrzymać informację (jeśli null - nie interesuje)
+     * @return wynik w postaci objektu klasy {@link org.json.JSONObject}, który potem zwracamy użytkownikowi:
      *          1) result - czy udało się obliczyć to co chciał użytkownik
      *          2) message - wynik bądż wiadomość błędu
      */
@@ -141,9 +141,9 @@ public class Budynek extends Lokalizacja {
     /**
      * Metoda, zwracająca odpowiednią powierzchnię dla budynku, poziomu bądż pomieszczenia
      *
-     * @param pom dla jakiego pomieszczenia chcemy dostać informację (jeśli null - nie interesuje)
-     * @param poz dla jakiego poziomu chcemy dostać informację (jeśli null - nie interesuje)
-     * @return objekt typu JSON, który potem zwracamy użytkownikowi:
+     * @param pom id pomiesczenia typu {@link java.lang.String} dla którego chcemy otrzymać informację (jeśli null - nie interesuje)
+     * @param poz id pomiesczenia typu {@link java.lang.String} dla którego poziomu chcemy otrzymać informację (jeśli null - nie interesuje)
+     * @return wynik w postaci objektu klasy {@link org.json.JSONObject}, który potem zwracamy użytkownikowi:
      *          1) result - czy udało się obliczyć to co chciał użytkownik
      *          2) message - wynik bądż wiadomość błędu
      */
@@ -173,12 +173,11 @@ public class Budynek extends Lokalizacja {
         return jo;
     }
 
-    // zwraca pomieszczenie, jeżeli posiada je na liście
     /**
-     * <p>findPoziom.</p>
-     *
-     * @param pom a {@link java.lang.String} object.
-     * @return a {@link pl.put.poznan.transformer.app.Poziom} object.
+     * Metoda która zwraca poziom na którym istnieje pomieszczenie o dannym identyfikatorze.
+     * Jeżeli pomieszczenie z tym identyfikatorem nie istnieje - zwraca null
+     * @param pom id pomiesczenia typu {@link java.lang.String}.
+     * @return objekt klasy {@link pl.put.poznan.buildingInfo.app.Poziom}.
      */
     public Poziom findPoziom(String pom) {
         for (Poziom tmp : this.poziomy) {
@@ -188,11 +187,12 @@ public class Budynek extends Lokalizacja {
     }
 
     /**
-     * <p>actionCube.</p>
-     *
-     * @param pom a {@link java.lang.String} object.
-     * @param poz a {@link java.lang.String} object.
-     * @return a {@link org.json.JSONObject} object.
+     * Metoda zwracająca kubaturę dla całego budynku/poziomu/pomieszczenia
+     * @param pom id pomiesczenia typu {@link java.lang.String}.
+     * @param poz id poziomu typu {@link java.lang.String}.
+     * @return wynik w postaci objektu klasy {@link org.json.JSONObject} który potem zwracamy użytkownikowi:
+     *      1) result - czy udało się obliczyć to co chciał użytkownik
+     *      2) message - wynik bądż wiadomość błędu
      */
     public JSONObject actionCube(String pom, String poz) {
         JSONObject jo = new JSONObject();
@@ -221,11 +221,12 @@ public class Budynek extends Lokalizacja {
     }
 
     /**
-     * <p>actionHeating.</p>
-     *
-     * @param pom a {@link java.lang.String} object.
-     * @param poz a {@link java.lang.String} object.
-     * @return a {@link org.json.JSONObject} object.
+     * Metoda zwracająca poziom zużycia energii ogrzewania
+     * @param pom id pomiesczenia typu {@link java.lang.String}.
+     * @param poz id poziomu typu {@link java.lang.String}.
+     * @return wynik w postaci objektu klasy {@link org.json.JSONObject} który potem zwracamy użytkownikowi:
+     *      1) result - czy udało się obliczyć to co chciał użytkownik
+     *      2) message - wynik bądż wiadomość błędu
      */
     public JSONObject actionHeating(String pom, String poz) {
         JSONObject jo = new JSONObject();
@@ -254,11 +255,12 @@ public class Budynek extends Lokalizacja {
     }
 
     /**
-     * <p>actionLight.</p>
-     *
-     * @param pom a {@link java.lang.String} object.
-     * @param poz a {@link java.lang.String} object.
-     * @return a {@link org.json.JSONObject} object.
+     * Metoda zwracająca moć oświetlenia
+     * @param pom id pomiesczenia typu {@link java.lang.String}.
+     * @param poz id poziomu typu {@link java.lang.String}.
+     * @return wynik w postaci objektu klasy {@link org.json.JSONObject} który potem zwracamy użytkownikowi:
+     *          1) result - czy udało się obliczyć to co chciał użytkownik
+     *          2) message - wynik bądż wiadomość błędu
      */
     public JSONObject actionLight(String pom, String poz) {
         JSONObject jo = new JSONObject();

@@ -53,6 +53,7 @@
                 <configuration>
                     <show>private</show>
                     <nohelp>false</nohelp>
+                    <javadocExecutable>/usr/lib/jvm/jdk-11/bin/javadoc</javadocExecutable>
                 </configuration>
             </plugin>
 

@@ -1,59 +1,60 @@
-package pl.put.poznan.transformer.app;
+package pl.put.poznan.buildingInfo.app;
 
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 
 /**
- * <p>Poziom class.</p>
+ * <p>Klasa Poziom.</p>
  *
- * @author daniktl
+ * @author daniktl, vieja, ppiotr98
  * @version $Id: $Id
  */
 public class Poziom extends Lokalizacja {
+    /**
+     * Lista objektów typu {@link Pomieszczenie} - pomieszczenia na tym poziomie
+     */
     private Set<Pomieszczenie> pomieszczenia = new HashSet<>();
 
     /**
-     * <p>Constructor for Poziom.</p>
+     * <p>Konstruktor klasy Poziom bez nazwy</p>
      *
-     * @param id a {@link java.lang.String} object.
+     * @param id identyfikator typu {@link java.lang.String}.
      */
     public Poziom(String id) {
         super(id);
     }
 
     /**
-     * <p>Constructor for Poziom.</p>
+     * <p>Konstruktor klasy Poziom z nazwą</p>
      *
-     * @param id a {@link java.lang.String} object.
-     * @param name a {@link java.lang.String} object.
+     * @param id identyfikator typu {@link java.lang.String}.
+     * @param name nazwa typu {@link java.lang.String}.
      */
     public Poziom(String id, String name) {
         super(id, name);
     }
 
     /**
-     * <p>addPomieszczenie.</p>
+     * <p>Metoda która dodaje {@link Pomieszczenie} do listy <code>pomieszczenia</code></p>
      *
-     * @param pomieszczenie a {@link pl.put.poznan.transformer.app.Pomieszczenie} object.
+     * @param pomieszczenie objekt typu {@link Pomieszczenie}.
      */
     public void addPomieszczenie(Pomieszczenie pomieszczenie){
         this.pomieszczenia.add(pomieszczenie);
     }
 
     /**
-     * <p>Getter for the field <code>pomieszczenia</code>.</p>
+     * <p>Getter dla atrybutu <code>pomieszczenia</code>.</p>
      *
-     * @return a {@link java.util.Set} object.
+     * @return lista {@link java.util.Set} <code>pomiesczenia</code>.
      */
     public Set<Pomieszczenie> getPomieszczenia() {
         return pomieszczenia;
     }
 
     /**
-     * <p>getFullArea.</p>
-     *
-     * @return a float.
+     * Metoda która zwraca powierzchnie dla tego poziomu
+     * @return float powierzchnia
      */
     public float getFullArea(){
         float res = 0;
@@ -64,9 +65,8 @@ public class Poziom extends Lokalizacja {
     }
 
     /**
-     * <p>getFullCube.</p>
-     *
-     * @return a float.
+     * Metoda która zwraca kubaturę dla tego poziomu
+     * @return float kubatura
      */
     public float getFullCube(){
         float res = 0;
@@ -77,9 +77,8 @@ public class Poziom extends Lokalizacja {
     }
 
     /**
-     * <p>getFullHeating.</p>
-     *
-     * @return a float.
+     * Metoda która zwraca poziom zyżycia energii dla tego poziomu
+     * @return float zużycie energii
      */
     public float getFullHeating(){
         float res = 0;
@@ -90,9 +89,8 @@ public class Poziom extends Lokalizacja {
     }
 
     /**
-     * <p>getFullLight.</p>
-     *
-     * @return a float.
+     * Metoda która zwraca łączną moc oświetlenia dla tego poziomu
+     * @return float
      */
     public float getFullLight(){
         float res = 0;
@@ -102,12 +100,12 @@ public class Poziom extends Lokalizacja {
         return res;
     }
 
-    // zwraca pomieszczenie, jeżeli posiada je na liście
     /**
-     * <p>findPomieszczenie.</p>
+     * <p>Metoda zwracająca Pomieszczenie.</p>
+     * Znajdż pomieszczenie o danym identyfikatorze jeśli istnieje
      *
-     * @param pom a {@link java.lang.String} object.
-     * @return a {@link pl.put.poznan.transformer.app.Pomieszczenie} object.
+     * @param pom identyfikator pomieszczenia typu {@link java.lang.String}.
+     * @return objekt typu {@link pl.put.poznan.buildingInfo.app.Pomieszczenie} jeśli pomieszczenia o danym identyfikatorze istnieje na liście pomieszczeń dla tego poziomu - otherwise null.
      */
     public Pomieszczenie findPomieszczenie(String pom) {
         for (Pomieszczenie tmp : this.pomieszczenia) {

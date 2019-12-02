@@ -1,18 +1,18 @@
-package pl.put.poznan.transformer.rest;
+package pl.put.poznan.buildingInfo.rest;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
-import pl.put.poznan.transformer.app.Budynek;
-import pl.put.poznan.transformer.app.Pomieszczenie;
-import pl.put.poznan.transformer.app.Poziom;
+import pl.put.poznan.buildingInfo.app.Budynek;
+import pl.put.poznan.buildingInfo.app.Pomieszczenie;
+import pl.put.poznan.buildingInfo.app.Poziom;
 
 
 /**
- * <p>BuildingInfoController class.</p>
+ * <p>Klasa BuildingInfoController.</p>
  *
- * @author daniktl
+ * @author daniktl, vieja, ppiotr98
  * @version $Id: $Id
  */
 @RestController
@@ -21,13 +21,13 @@ public class BuildingInfoController {
     private static final Logger logger = LoggerFactory.getLogger(BuildingInfoController.class);
 
     /**
-     * <p>post.</p>
+     * <p>Metoda która obsługuje zapytanie typu <code>post</code></p>
      *
-     * @param action a {@link java.lang.String} object.
-     * @param pom a {@link java.lang.String} object.
-     * @param poz a {@link java.lang.String} object.
-     * @param payload a {@link java.lang.String} object.
-     * @return a {@link java.lang.String} object.
+     * @param action działanie na danych typu {@link java.lang.String}.
+     * @param pom identyfikator pomieszczenia typu {@link java.lang.String}.
+     * @param poz identyfikator poziomu typu  {@link java.lang.String}.
+     * @param payload struktura budynku typu {@link java.lang.String}.
+     * @return wynik {@link JSONObject} przekonwertowany do typu {@link java.lang.String}.
      */
     @RequestMapping(value = "/{action}", method = RequestMethod.POST, produces = "application/json")
     public String post(@PathVariable("action") String action,

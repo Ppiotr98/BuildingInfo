@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="documentation for building">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/buildingInfo/app/Lokalizacja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/buildingInfo/app/Pomieszczenie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Budynek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Budynek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/BuildingInfoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/BuildingInfoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Lokalizacja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Lokalizacja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Pomieszczenie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Pomieszczenie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Poziom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Poziom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/BuildingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/BuildingInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/BuildingInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/BuildingInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Budynek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/buildingInfo/app/Budynek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/BuildingInfoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/buildingInfo/app/BuildingInfoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Lokalizacja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Pomieszczenie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/app/Poziom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/buildingInfo/app/Poziom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/logic/BuildingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/buildingInfo/logic/BuildingInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/put/poznan/transformer/rest/BuildingInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/put/poznan/buildingInfo/rest/BuildingInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,12 +88,12 @@
       </method>
     </configuration>
     <configuration name="BuildingInfoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.transformer.app.BuildingInfoApplication" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.buildingInfo.app.BuildingInfoApplication" />
       <module name="ioprojectarchitecture" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.put.poznan.transformer.app.*" />
+          <option name="PATTERN" value="pl.put.poznan.buildingInfo.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,7 +116,7 @@
     </configuration>
     <configuration name="BuildingInfoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ioprojectarchitecture" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.put.poznan.transformer.app.BuildingInfoApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pl.put.poznan.buildingInfo.app.BuildingInfoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -229,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575310182046</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="documentation for building">
+      <created>1575310604561</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1575310604561</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
