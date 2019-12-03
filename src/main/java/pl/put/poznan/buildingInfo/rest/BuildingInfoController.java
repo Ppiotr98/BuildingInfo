@@ -8,7 +8,6 @@ import pl.put.poznan.buildingInfo.logic.Budynek;
 import pl.put.poznan.buildingInfo.logic.Pomieszczenie;
 import pl.put.poznan.buildingInfo.logic.Poziom;
 
-
 /**
  * <p>Klasa BuildingInfoController.</p>
  *
@@ -68,8 +67,10 @@ public class BuildingInfoController {
                 float cube = pom_tmp_jo.getFloat("cube");
                 float heating = pom_tmp_jo.getFloat("heating");
                 int light = pom_tmp_jo.getInt("light");
+                logger.debug("{} & {}: area: {}, cube: {}, heating: {}, light:{}.", id_pom, name_pom, area, cube, heating, light);
                 Pomieszczenie pom_tmp = new Pomieszczenie(id_pom, name_pom, area, cube, heating, light);
                 // add object into level's set
+                logger.info("Pomieszczenie z identyfikatorem {} zostało dodane.", id_pom);
                 poz_tmp.addPomieszczenie(pom_tmp);
             }
             // add level into building's set
