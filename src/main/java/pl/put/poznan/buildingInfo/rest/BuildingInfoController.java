@@ -25,7 +25,7 @@ public class BuildingInfoController {
      * @param action działanie na danych typu {@link java.lang.String}.
      * @param pom identyfikator pomieszczenia typu {@link java.lang.String}.
      * @param poz identyfikator poziomu typu {@link java.lang.String}.
-     * @param threshold poziom nieprzekraczalny zużycia energii cieplnej typu {@link java.lang.String}.
+     * @param threshold_value poziom nieprzekraczalny zużycia energii cieplnej typu {@link java.lang.String}.
      * @param payload struktura budynku typu {@link java.lang.String}.
      * @return wynik {@link JSONObject} przekonwertowany do typu {@link java.lang.String}.
      */
@@ -33,7 +33,7 @@ public class BuildingInfoController {
     public String post(@PathVariable("action") String action,
                       @RequestParam(name="pom", required = false) String pom,
                       @RequestParam(name="poz", required = false) String poz,
-                      @RequestParam(name="threshold", required = false) String threshold,
+                      @RequestParam(name="value", required = false) String threshold_value,
                       @RequestBody(required = false) String payload) {
 
         // log the parameters
@@ -69,7 +69,7 @@ public class BuildingInfoController {
                 float cube = pom_tmp_jo.getFloat("cube");
                 float heating = pom_tmp_jo.getFloat("heating");
                 int light = pom_tmp_jo.getInt("light");
-                logger.debug("{} & {}: area: {}, cube: {}, heating: {}, light:{}.", id_pom, name_pom, area, cube, heating, light);
+                logger.debug("{} & {}: area: {}, cube: {}, heating: {}, light:{}.", id_pom, id_poz, area, cube, heating, light);
                 Pomieszczenie pom_tmp = new Pomieszczenie(id_pom, name_pom, area, cube, heating, light);
                 // add object into level's set
                 logger.info("Pomieszczenie z identyfikatorem {} zostało dodane.", id_pom);
@@ -79,7 +79,7 @@ public class BuildingInfoController {
             budynek.addPoziom(poz_tmp);
         }
         // return result according to the request
-        return budynek.zwrocWynik(action, pom, poz, threshold).toString();
+        return budynek.zwrocWynik(action, pom, poz, threshold_value).toString();
     }
 
 

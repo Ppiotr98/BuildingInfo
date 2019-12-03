@@ -81,11 +81,13 @@ public class Pomieszczenie extends Lokalizacja {
         return light;
     }
 
+
+    /**
+     * Metoda zwracająca listę pomiesczeń przekraczających poziom zużycia energii cieplnej / m3
+     * @param threshold poziom zużycia energii
+     * @return objekt typu {@link org.json.JSONObject} który zawiera pary id_pomieszczenia: zużycie energii cieplnej
+     */
     public boolean overflowHeating(float threshold){
-        if (this.heating > threshold){
-            return true;
-        }else {
-            return false;
-        }
+        return this.heating/this.cube > threshold;
     }
 }
