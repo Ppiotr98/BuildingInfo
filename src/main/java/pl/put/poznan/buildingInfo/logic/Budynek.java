@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 /**
- * Klasa budynek
+ * Klasa Budynek
  *
  * @author daniktl, vieja, ppiotr98
  * @version $Id: $Id
@@ -27,7 +27,7 @@ public class Budynek extends Lokalizacja {
     /**
      * Konstruktor {@link Budynek}
      *
-     * @deprecated konstruktor wykorzystywany wcześniej do tworzenia objektów klasy Budynek
+     * @deprecated konstruktor wykorzystywany wcześniej do tworzenia obiektów klasy Budynek
      * @param id identyfikator budynku typu {@link java.lang.String}.
      * @param name nazwa budynku typu {@link java.lang.String}.
      */
@@ -37,15 +37,15 @@ public class Budynek extends Lokalizacja {
 
 
     /**
-     * Metoda która umożliwia dodawanie poziomów na listę poziomów budynku
-     * @param poziom objekt typu {@link Poziom}, który chcemy dodać na listę poziomów dla tego budynku
+     * Metoda, która umożliwia dodawanie poziomów na listę poziomów budynku
+     * @param poziom obiekt typu {@link Poziom}, który chcemy dodać na listę poziomów dla tego budynku
      */
     public void addPoziom(Poziom poziom) {
         this.poziomy.add(poziom);
     }
 
     /**
-     * Metoda która zwraca powierzchnie całęgo budynku
+     * Metoda, która zwraca powierzchnię całeęgo budynku
      * @return float powierzchnia
      */
     public float getFullArea(){
@@ -59,7 +59,7 @@ public class Budynek extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca kubaturę całęgo budynku
+     * Metoda, która zwraca kubaturę całego budynku
      * @return float kubatura
      */
     public float getFullCube(){
@@ -73,7 +73,7 @@ public class Budynek extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca poziom zyżycia energii dla całęgo budynku
+     * Metoda, która zwraca poziom zyżycia energii dla całego budynku
      *
      * @return float zużycie energii
      */
@@ -88,7 +88,7 @@ public class Budynek extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca łączną moc oświetlenia dla całęgo budynku
+     * Metoda, która zwraca łączną moc oświetlenia dla całego budynku
      *
      * @return float
      */
@@ -102,21 +102,18 @@ public class Budynek extends Lokalizacja {
         return res;
     }
 
-    // skoro i tak zwrocWynik wywołujemy na budynku w kontrolerze, to równie dobrze ta metoda moze być tutaj
-    // wtedy możemy wywołać odpowiednie metody na poziomach w secie
-
     /**
      * Główna metoda, wywoływana w {@link pl.put.poznan.buildingInfo.rest.BuildingInfoController}.
      *
-     * @param action jakie dane użytkownik chce dostać. Dostępnę są następne akcje:
-     *               1) area - zwróć powierzchnie dla całego budynku/poziomu/pomieszczenia
+     * @param action jakie dane użytkownik chce dostać. Dostępne są następujące akcje:
+     *               1) area - zwróć powierzchnię dla całego budynku/poziomu/pomieszczenia
      *               2) cube - zwróć kubaturę dla całego budynku/poziomu/pomieszczenia
      *               3) heating - zwróć poziom zyżycia energii dla całęgo budynku/poziomu/pomieszczenia
-     *               4) light - zwróć łączną moc oświetlenia dla całęgo budynku/poziomu/pomieszczenia
-     * @param pom id pomiesczenia typu {@link java.lang.String} dla którego chcemy otrzymać informację (jeśli null - nie interesuje)
-     * @param poz id pomiesczenia typu {@link java.lang.String} dla którego poziomu chcemy otrzymać informację (jeśli null - nie interesuje)
-     * @return wynik w postaci objektu klasy {@link org.json.JSONObject}, który potem zwracamy użytkownikowi:
-     *          1) result - czy udało się obliczyć to co chciał użytkownik
+     *               4) light - zwróć łączną moc oświetlenia dla całego budynku/poziomu/pomieszczenia
+     * @param pom id pomieszczenia typu {@link java.lang.String} dla którego chcemy otrzymać informację (jeśli null - nie dotyczy)
+     * @param poz id pomieszczenia typu {@link java.lang.String} dla którego poziomu chcemy otrzymać informację (jeśli null - nie dotyczy)
+     * @return wynik w postaci obiektu klasy {@link org.json.JSONObject}, który potem zwracamy użytkownikowi:
+     *          1) result - informacja o sukcesie bądź porażce przy obliczaniu
      *          2) message - wynik bądż wiadomość błędu
      */
     public JSONObject zwrocWynik(String action, String pom, String poz) {
@@ -139,12 +136,12 @@ public class Budynek extends Lokalizacja {
     }
 
     /**
-     * Metoda, zwracająca odpowiednią powierzchnię dla budynku, poziomu bądż pomieszczenia
+     * Metoda zwracająca odpowiednią powierzchnię dla budynku, poziomu bądż pomieszczenia
      *
-     * @param pom id pomiesczenia typu {@link java.lang.String} dla którego chcemy otrzymać informację (jeśli null - nie interesuje)
-     * @param poz id pomiesczenia typu {@link java.lang.String} dla którego poziomu chcemy otrzymać informację (jeśli null - nie interesuje)
-     * @return wynik w postaci objektu klasy {@link org.json.JSONObject}, który potem zwracamy użytkownikowi:
-     *          1) result - czy udało się obliczyć to co chciał użytkownik
+     * @param pom id pomieszczenia typu {@link java.lang.String} dla którego chcemy otrzymać informację (jeśli null - nie dotyczy)
+     * @param poz id pomieszczenia typu {@link java.lang.String} dla którego poziomu chcemy otrzymać informację (jeśli null - nie dotyczy)
+     * @return wynik w postaci obiektu klasy {@link org.json.JSONObject}, który potem zwracamy użytkownikowi:
+     *          1) result - informacja o sukcesie bądź porażce przy obliczaniu
      *          2) message - wynik bądż wiadomość błędu
      */
     public JSONObject actionArea(String pom, String poz) {
@@ -174,10 +171,10 @@ public class Budynek extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca poziom na którym istnieje pomieszczenie o dannym identyfikatorze.
+     * Metoda, która zwraca poziom, na którym istnieje pomieszczenie o danym identyfikatorze.
      * Jeżeli pomieszczenie z tym identyfikatorem nie istnieje - zwraca null
      * @param pom id pomiesczenia typu {@link java.lang.String}.
-     * @return objekt klasy {@link Poziom}.
+     * @return obiekt klasy {@link Poziom}.
      */
     public Poziom findPoziom(String pom) {
         for (Poziom tmp : this.poziomy) {
@@ -188,10 +185,10 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda zwracająca kubaturę dla całego budynku/poziomu/pomieszczenia
-     * @param pom id pomiesczenia typu {@link java.lang.String}.
+     * @param pom id pomieszczenia typu {@link java.lang.String}.
      * @param poz id poziomu typu {@link java.lang.String}.
-     * @return wynik w postaci objektu klasy {@link org.json.JSONObject} który potem zwracamy użytkownikowi:
-     *      1) result - czy udało się obliczyć to co chciał użytkownik
+     * @return wynik w postaci obiektu klasy {@link org.json.JSONObject}, który potem zwracamy użytkownikowi:
+     *      1) result - informacja o sukcesie bądź porażce przy obliczaniu
      *      2) message - wynik bądż wiadomość błędu
      */
     public JSONObject actionCube(String pom, String poz) {
@@ -221,11 +218,11 @@ public class Budynek extends Lokalizacja {
     }
 
     /**
-     * Metoda zwracająca poziom zużycia energii ogrzewania
-     * @param pom id pomiesczenia typu {@link java.lang.String}.
+     * Metoda zwracająca poziom zużycia energii na ogrzewanie
+     * @param pom id pomieszczenia typu {@link java.lang.String}.
      * @param poz id poziomu typu {@link java.lang.String}.
-     * @return wynik w postaci objektu klasy {@link org.json.JSONObject} który potem zwracamy użytkownikowi:
-     *      1) result - czy udało się obliczyć to co chciał użytkownik
+     * @return wynik w postaci obiektu klasy {@link org.json.JSONObject} który potem zwracamy użytkownikowi:
+     *      1) result - informacja o sukcesie bądź porażce przy obliczaniu
      *      2) message - wynik bądż wiadomość błędu
      */
     public JSONObject actionHeating(String pom, String poz) {
@@ -256,10 +253,10 @@ public class Budynek extends Lokalizacja {
 
     /**
      * Metoda zwracająca moć oświetlenia
-     * @param pom id pomiesczenia typu {@link java.lang.String}.
+     * @param pom id pomieszczenia typu {@link java.lang.String}.
      * @param poz id poziomu typu {@link java.lang.String}.
-     * @return wynik w postaci objektu klasy {@link org.json.JSONObject} który potem zwracamy użytkownikowi:
-     *          1) result - czy udało się obliczyć to co chciał użytkownik
+     * @return wynik w postaci obiektu klasy {@link org.json.JSONObject} który potem zwracamy użytkownikowi:
+     *          1) result - informacja o sukcesie bądź porażce przy obliczaniu
      *          2) message - wynik bądż wiadomość błędu
      */
     public JSONObject actionLight(String pom, String poz) {

@@ -35,25 +35,16 @@ public class Poziom extends Lokalizacja {
     }
 
     /**
-     * <p>Metoda która dodaje {@link Pomieszczenie} do listy <code>pomieszczenia</code></p>
+     * <p>Metoda, która dodaje {@link Pomieszczenie} do listy <code>pomieszczenia</code></p>
      *
-     * @param pomieszczenie objekt typu {@link Pomieszczenie}.
+     * @param pomieszczenie obiekt typu {@link Pomieszczenie}.
      */
     public void addPomieszczenie(Pomieszczenie pomieszczenie){
         this.pomieszczenia.add(pomieszczenie);
     }
 
     /**
-     * <p>Getter dla atrybutu <code>pomieszczenia</code>.</p>
-     *
-     * @return lista {@link java.util.Set} <code>pomiesczenia</code>.
-     */
-    public Set<Pomieszczenie> getPomieszczenia() {
-        return pomieszczenia;
-    }
-
-    /**
-     * Metoda która zwraca powierzchnie dla tego poziomu
+     * Metoda, która zwraca powierzchnię dla tego poziomu
      * @return float powierzchnia
      */
     public float getFullArea(){
@@ -65,7 +56,7 @@ public class Poziom extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca kubaturę dla tego poziomu
+     * Metoda, która zwraca kubaturę dla tego poziomu
      * @return float kubatura
      */
     public float getFullCube(){
@@ -77,7 +68,7 @@ public class Poziom extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca poziom zyżycia energii dla tego poziomu
+     * Metoda, która zwraca poziom zyżycia energii dla tego poziomu
      * @return float zużycie energii
      */
     public float getFullHeating(){
@@ -89,7 +80,7 @@ public class Poziom extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca łączną moc oświetlenia dla tego poziomu
+     * Metoda, która zwraca łączną moc oświetlenia dla tego poziomu
      * @return float
      */
     public float getFullLight(){
@@ -105,7 +96,7 @@ public class Poziom extends Lokalizacja {
      * Znajdż pomieszczenie o danym identyfikatorze jeśli istnieje
      *
      * @param pom identyfikator pomieszczenia typu {@link java.lang.String}.
-     * @return objekt typu {@link Pomieszczenie} jeśli pomieszczenia o danym identyfikatorze istnieje na liście pomieszczeń dla tego poziomu - otherwise null.
+     * @return obiekt typu {@link Pomieszczenie} jeśli pomieszczenia o danym identyfikatorze istnieje na liście pomieszczeń dla tego poziomu - w innym przypadku null.
      */
     public Pomieszczenie findPomieszczenie(String pom) {
         for (Pomieszczenie tmp : this.pomieszczenia) {
