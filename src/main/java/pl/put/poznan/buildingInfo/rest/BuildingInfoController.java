@@ -24,7 +24,8 @@ public class BuildingInfoController {
      *
      * @param action działanie na danych typu {@link java.lang.String}.
      * @param pom identyfikator pomieszczenia typu {@link java.lang.String}.
-     * @param poz identyfikator poziomu typu  {@link java.lang.String}.
+     * @param poz identyfikator poziomu typu {@link java.lang.String}.
+     * @param threshold poziom nieprzekraczalny zużycia energii cieplnej typu {@link java.lang.String}.
      * @param payload struktura budynku typu {@link java.lang.String}.
      * @return wynik {@link JSONObject} przekonwertowany do typu {@link java.lang.String}.
      */
@@ -32,6 +33,7 @@ public class BuildingInfoController {
     public String post(@PathVariable("action") String action,
                       @RequestParam(name="pom", required = false) String pom,
                       @RequestParam(name="poz", required = false) String poz,
+                      @RequestParam(name="threshold", required = false) String threshold,
                       @RequestBody(required = false) String payload) {
 
         // log the parameters
@@ -77,7 +79,7 @@ public class BuildingInfoController {
             budynek.addPoziom(poz_tmp);
         }
         // return result according to the request
-        return budynek.zwrocWynik(action, pom, poz).toString();
+        return budynek.zwrocWynik(action, pom, poz, threshold).toString();
     }
 
 

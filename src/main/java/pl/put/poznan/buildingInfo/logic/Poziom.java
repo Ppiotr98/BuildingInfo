@@ -1,5 +1,7 @@
 package pl.put.poznan.buildingInfo.logic;
 
+import org.json.JSONObject;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -112,5 +114,14 @@ public class Poziom extends Lokalizacja {
             if (tmp.getId().equals(pom)) return tmp;
         }
         return null;
+    }
+
+    public JSONObject getOverflowed(float threshold, JSONObject result){
+        for (Pomieszczenie pom: this.pomieszczenia){
+            if(pom.overflowHeating(threshold)){
+                result.put(pom.getId(), pom.getFullHeating());
+            }
+        }
+        return result;
     }
 }

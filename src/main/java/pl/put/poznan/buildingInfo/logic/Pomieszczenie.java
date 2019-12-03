@@ -1,5 +1,7 @@
 package pl.put.poznan.buildingInfo.logic;
 
+import java.util.SplittableRandom;
+
 /**
  * <p>Klasa Pomieszczenie.</p>
  *
@@ -77,5 +79,13 @@ public class Pomieszczenie extends Lokalizacja {
      */
     public float getFullLight() {
         return light;
+    }
+
+    public boolean overflowHeating(float threshold){
+        if (this.heating > threshold){
+            return true;
+        }else {
+            return false;
+        }
     }
 }
