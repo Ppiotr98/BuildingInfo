@@ -54,25 +54,25 @@ public abstract class Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca powierzchnie
+     * Metoda, która zwraca powierzchnię
      * @return float powierzchnia
      */
     public abstract float getFullArea();
 
     /**
-     * Metoda która zwraca poziom zyżycia energii
+     * Metoda, która zwraca poziom zyżycia energii
      * @return float zużycie energii
      */
     public abstract float getFullHeating();
 
     /**
-     * Metoda która zwraca łączną moc oświetlenia
+     * Metoda, która zwraca łączną moc oświetlenia
      * @return float
      */
     public abstract float getFullLight();
 
     /**
-     * Metoda która zwraca kubaturę
+     * Metoda, która zwraca kubaturę
      * @return float kubatura
      */
     public abstract float getFullCube();

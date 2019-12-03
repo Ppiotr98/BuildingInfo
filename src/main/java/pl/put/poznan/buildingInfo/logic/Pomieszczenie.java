@@ -50,7 +50,7 @@ public class Pomieszczenie extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca powierzchnie dla tego pomieszczenia
+     * Metoda, która zwraca powierzchnię dla tego pomieszczenia
      * @return float powierzchnia
      */
     public float getFullArea() {
@@ -58,7 +58,7 @@ public class Pomieszczenie extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca kubaturę dla tego pomieszczenia
+     * Metoda, która zwraca kubaturę dla tego pomieszczenia
      * @return float kubatura
      */
     public float getFullCube() {
@@ -66,7 +66,7 @@ public class Pomieszczenie extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca poziom zyżycia energii dla tego pomieszczenia
+     * Metoda, która zwraca poziom zyżycia energii dla tego pomieszczenia
      * @return float zużycie energii
      */
     public float getFullHeating() {
@@ -74,7 +74,7 @@ public class Pomieszczenie extends Lokalizacja {
     }
 
     /**
-     * Metoda która zwraca łączną moc oświetlenia dla tego pomieszczenia
+     * Metoda, która zwraca łączną moc oświetlenia dla tego pomieszczenia
      * @return float
      */
     public float getFullLight() {
