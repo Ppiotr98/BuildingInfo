@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="updated documentation">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_0_RC1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_0_RC1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/put/poznan/buildingInfo/logic/PomieszczenieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ddec5298-a09c-455a-9c39-fa30be24617d" name="Default" comment="testing methods&#10;docs">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/put/poznan/buildingInfo/logic/PoziomTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buildNumber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/buildNumber.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ioprojectarchitecture.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ioprojectarchitecture.iml" afterDir="false" />
@@ -24,7 +16,6 @@
       <change beforePath="$PROJECT_DIR$/target/site/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/help-doc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/index-all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/apidocs/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/member-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/apidocs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/overview-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/overview-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/apidocs/pl/put/poznan/buildingInfo/app/BuildingInfoApplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/apidocs/pl/put/poznan/buildingInfo/app/BuildingInfoApplication.html" afterDir="false" />
@@ -115,23 +106,9 @@
       <recent name="C:\Users\Vieja\PLIKI\Studia\Semestr V\BuildingInfo\src\main\java\pl\put\poznan\transformer\app" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PomieszczenieTest">
+  <component name="RunManager" selected="JUnit.PoziomTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BuildingInfoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.buildingInfo.app.BuildingInfoApplication" />
-      <module name="ioprojectarchitecture" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.put.poznan.buildingInfo.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PomieszczenieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PoziomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ioprojectarchitecture" />
       <extension name="coverage">
         <pattern>
@@ -151,14 +128,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.put.poznan.buildingInfo.logic" />
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.buildingInfo.logic.PomieszczenieTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.buildingInfo.logic.PoziomTest" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PomieszczenieTest.getFullCube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PoziomTest.getFullCube" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ioprojectarchitecture" />
       <extension name="coverage">
         <pattern>
@@ -167,7 +144,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.put.poznan.buildingInfo.logic" />
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.buildingInfo.logic.PomieszczenieTest" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.buildingInfo.logic.PoziomTest" />
       <option name="METHOD_NAME" value="getFullCube" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -175,7 +152,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PomieszczenieTest.overflowHeating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PoziomTest.getFullHeating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ioprojectarchitecture" />
       <extension name="coverage">
         <pattern>
@@ -184,8 +161,42 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.put.poznan.buildingInfo.logic" />
-      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.buildingInfo.logic.PomieszczenieTest" />
-      <option name="METHOD_NAME" value="overflowHeating" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.buildingInfo.logic.PoziomTest" />
+      <option name="METHOD_NAME" value="getFullHeating" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PoziomTest.getFullLight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ioprojectarchitecture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.put.poznan.buildingInfo.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.put.poznan.buildingInfo.logic" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.buildingInfo.logic.PoziomTest" />
+      <option name="METHOD_NAME" value="getFullLight" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PoziomTest.getOverflowed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ioprojectarchitecture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.put.poznan.buildingInfo.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.put.poznan.buildingInfo.logic" />
+      <option name="MAIN_CLASS_NAME" value="pl.put.poznan.buildingInfo.logic.PoziomTest" />
+      <option name="METHOD_NAME" value="getOverflowed" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -226,10 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PomieszczenieTest" />
-        <item itemvalue="JUnit.PomieszczenieTest.overflowHeating" />
-        <item itemvalue="JUnit.PomieszczenieTest.getFullCube" />
-        <item itemvalue="Application.BuildingInfoApplication" />
+        <item itemvalue="JUnit.PoziomTest" />
+        <item itemvalue="JUnit.PoziomTest.getOverflowed" />
+        <item itemvalue="JUnit.PoziomTest.getFullLight" />
+        <item itemvalue="JUnit.PoziomTest.getFullHeating" />
+        <item itemvalue="JUnit.PoziomTest.getFullCube" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +276,7 @@
       <workItem from="1575131047674" duration="7536000" />
       <workItem from="1575372172152" duration="2957000" />
       <workItem from="1575639552602" duration="7000" />
-      <workItem from="1578910775861" duration="2244000" />
+      <workItem from="1578910775861" duration="4422000" />
     </task>
     <task id="LOCAL-00001" summary="add 4 basic classes">
       <created>1574935642416</created>
@@ -385,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575373281884</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="testing methods&#10;docs">
+      <created>1578913520973</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1578913520973</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +438,8 @@
     <MESSAGE value="more logs" />
     <MESSAGE value="heating threshold" />
     <MESSAGE value="updated documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated documentation" />
+    <MESSAGE value="testing methods&#10;docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing methods&#10;docs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1575208583037">
@@ -430,30 +450,30 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="834" y="445" width="308" height="214" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1578911983788" />
-    <state x="538" y="148" width="900" height="808" key="CommitChangelistDialog2" timestamp="1575373281632">
+    <state x="538" y="148" width="900" height="808" key="CommitChangelistDialog2" timestamp="1578913520605">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="538" y="148" width="900" height="808" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1575373281632" />
-    <state width="1807" height="236" key="GridCell.Tab.0.bottom" timestamp="1578913256257">
+    <state x="538" y="148" width="900" height="808" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1578913520605" />
+    <state width="1807" height="315" key="GridCell.Tab.0.bottom" timestamp="1578915601239">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575213418051" />
-    <state width="1807" height="236" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578913256257" />
-    <state width="1807" height="236" key="GridCell.Tab.0.center" timestamp="1578913256256">
+    <state width="1807" height="315" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1578915601239" />
+    <state width="1807" height="315" key="GridCell.Tab.0.center" timestamp="1578915601238">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575213418051" />
-    <state width="1807" height="236" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578913256256" />
-    <state width="1807" height="236" key="GridCell.Tab.0.left" timestamp="1578913256255">
+    <state width="1807" height="315" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1578915601238" />
+    <state width="1807" height="315" key="GridCell.Tab.0.left" timestamp="1578915601238">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575213418050" />
-    <state width="1807" height="236" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578913256255" />
-    <state width="1807" height="236" key="GridCell.Tab.0.right" timestamp="1578913256257">
+    <state width="1807" height="315" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1578915601238" />
+    <state width="1807" height="315" key="GridCell.Tab.0.right" timestamp="1578915601238">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575213418051" />
-    <state width="1807" height="236" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578913256257" />
+    <state width="1807" height="315" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1578915601238" />
     <state x="526" y="211" width="924" height="682" key="Maven.ArtifactSearchDialog" timestamp="1578912009501">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -470,9 +490,9 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="761" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1853.1053@67.27.1853.1053" timestamp="1578910784282" />
-    <state x="717" y="258" width="542" height="588" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578911969014">
+    <state x="717" y="258" width="542" height="588" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578913626112">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="717" y="258" width="542" height="588" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1578911969014" />
+    <state x="717" y="258" width="542" height="588" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1578913626112" />
   </component>
 </project>
