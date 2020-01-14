@@ -23,3 +23,5 @@ To run app:
     * Return json object values:
         - result (success, or not)
         - message|another requested value
+
+![Build status](https://travis-ci.org/Ppiotr98/BuildingInfo.svg?branch=master)
