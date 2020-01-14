@@ -1,10 +1,11 @@
-package pl.put.poznan.buildingInfo.logic;
-
+package put.io.testing.mocks;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 import org.junit.*;
 import org.mockito.*;
+import pl.put.poznan.buildingInfo.logic.Pomieszczenie;
+import pl.put.poznan.buildingInfo.logic.Poziom;
 
 public class PoziomMockTest {
 

@@ -6,10 +6,10 @@ import static org.mockito.Mockito.*;
 import org.junit.*;
 import org.mockito.*;
 
-import put.io.students.fancylibrary.database.FancyDatabase;
-import put.io.students.fancylibrary.database.IFancyDatabase;
+import pl.put.poznan.buildingInfo.logic.Budynek;
+import pl.put.poznan.buildingInfo.logic.Poziom;
 
-public class BudynekTest {
+public class BudynekMockTest {
 
     @Test
     public void getFullAreaTest() {
@@ -19,7 +19,7 @@ public class BudynekTest {
         Poziom poz2 = mock(Poziom.class);
         when(poz2.getFullArea()).thenReturn((float) 4);
 
-        Budynek bud = new Budynek("bud1")
+        Budynek bud = new Budynek();
         bud.addPoziom(poz1);
         bud.addPoziom(poz2);
 
@@ -36,7 +36,7 @@ public class BudynekTest {
         Poziom poz2 = mock(Poziom.class);
         when(poz2.getFullCube()).thenReturn((float) 4);
 
-        Budynek bud = new Budynek("bud1")
+        Budynek bud = new Budynek();
         bud.addPoziom(poz1);
         bud.addPoziom(poz2);
 
@@ -53,7 +53,7 @@ public class BudynekTest {
         Poziom poz2 = mock(Poziom.class);
         when(poz2.getFullHeating()).thenReturn((float) 4);
 
-        Budynek bud = new Budynek("bud1")
+        Budynek bud = new Budynek();
         bud.addPoziom(poz1);
         bud.addPoziom(poz2);
 
@@ -70,7 +70,7 @@ public class BudynekTest {
         Poziom poz2 = mock(Poziom.class);
         when(poz2.getFullLight()).thenReturn((float) 4);
 
-        Budynek bud = new Budynek("bud1")
+        Budynek bud = new Budynek();
         bud.addPoziom(poz1);
         bud.addPoziom(poz2);
 
