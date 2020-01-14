@@ -128,6 +128,8 @@ public class Budynek extends Lokalizacja {
                 return actionLight(pom, poz);
             case "threshold":
                 return actionThreshold(threshold_value);
+            case "threshold_light":
+                return actionThresholdLight(threshold_value);
             default:
                 return new JSONObject() {{
                     put("result", "failure");
@@ -300,6 +302,25 @@ public class Budynek extends Lokalizacja {
         JSONObject jo_pom_threshold = new JSONObject();
         for (Poziom poziom: this.poziomy) {
             jo_pom_threshold = poziom.getOverflowed(threshold_f, jo_pom_threshold);
+        }
+        result.put("Pomieszczenia", jo_pom_threshold);
+        return result;
+    }
+
+    public JSONObject actionThresholdLight(String threshold) {
+        JSONObject result = new JSONObject();
+        float threshold_f;
+        try {
+            threshold_f = Float.parseFloat(threshold);
+        }catch (NumberFormatException nfe){
+            result.put("result", "failure");
+            result.put("message", "Invalid threshold format");
+            return result;
+        }
+        result.put("result", "success");
+        JSONObject jo_pom_threshold = new JSONObject();
+        for (Poziom poziom: this.poziomy) {
+            jo_pom_threshold = poziom.getOverflowedLight(threshold_f, jo_pom_threshold);
         }
         result.put("Pomieszczenia", jo_pom_threshold);
         return result;

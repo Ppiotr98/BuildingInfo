@@ -90,4 +90,13 @@ public class Pomieszczenie extends Lokalizacja {
     public boolean overflowHeating(float threshold){
         return this.heating/this.cube > threshold;
     }
+
+    /**
+     * Metoda zwracająca listę pomiesczeń nieprzekraczających podanego progu mocy oświetlenia / m2
+     * @param threshold poziom zużycia energii
+     * @return objekt typu {@link org.json.JSONObject} który zawiera pary id_pomieszczenia: moc oświetlenia
+     */
+    public boolean overflowLight(float threshold){
+        return this.light/this.area < threshold;
+    }
 }

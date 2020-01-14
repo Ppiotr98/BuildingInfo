@@ -110,13 +110,28 @@ public class Poziom extends Lokalizacja {
     /**
      * Metoda, sprawdzająca wszystkie pomieszczenia na tym poziomie i dodająca do listy te które przekraczają ustalony poziom
      * @param threshold poziom zużycia energii
-     * @param result objekt typu {@link JSONObject} który zawiera dane z poprzednich poziomów
+     * @param result obiekt typu {@link JSONObject} który zawiera dane z poprzednich poziomów
      * @return parametr wejściowy uzupełniony o pomieszczenia przekraczające poziom zużycia energii cieplnej z tego poziomu
      */
     public JSONObject getOverflowed(float threshold, JSONObject result){
         for (Pomieszczenie pom: this.pomieszczenia){
             if(pom.overflowHeating(threshold)){
                 result.put(pom.getId(), pom.getFullHeating());
+            }
+        }
+        return result;
+    }
+
+    /**
+     * Metoda, sprawdzająca wszystkie pomieszczenia na tym poziomie i dodająca do listy te które nie przekraczają ustalonego poziomu
+     * @param threshold poziom mocy oświetlenia na m2
+     * @param result obiekt typu {@link JSONObject} który zawiera dane z poprzednich poziomów
+     * @return parametr wejściowy uzupełniony o pomieszczenia nieprzekraczające poziomu mocy oświetlenia z tego poziomu
+     */
+    public JSONObject getOverflowedLight(float threshold, JSONObject result){
+        for (Pomieszczenie pom: this.pomieszczenia){
+            if(pom.overflowLight(threshold)){
+                result.put(pom.getId(), pom.getFullLight());
             }
         }
         return result;
